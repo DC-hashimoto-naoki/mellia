@@ -859,7 +859,7 @@ button:hover {
 
 .features__image02 > * {
   width: 63rem;
-  margin: 10rem auto;
+  margin: 10rem auto 2rem;
   opacity: 0;
   filter: blur(1rem);
   box-shadow: #ADB6C4 0rem 0rem 2rem;
