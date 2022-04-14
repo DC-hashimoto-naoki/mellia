@@ -99,6 +99,17 @@ button:hover {
   transform: translateY(0);
 }
 
+.js-fadeInDown {
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition-duration: .7s;
+}
+
+.js-fadeInDown.isInViewed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .js-marker {
   background-size: 0% 50%;
   transition-duration: .7s;
@@ -225,12 +236,33 @@ button:hover {
 
 
 /*
-// mv
+// mv fv
 */
 
 .mv {}
 
 .mv__image {}
+
+.fv__wrapper {
+  position: relative;
+}
+
+.fv_bottle,
+.fv_foam {
+  position: absolute;
+}
+
+.fv_bottle {
+  bottom: 35.3rem;
+  left: 15.2rem;
+  width: 49.2rem;
+}
+
+.fv_foam {
+  bottom: 5rem;
+  left: -2rem;
+  width: 60rem;
+}
 
 
 /*
@@ -281,6 +313,7 @@ button:hover {
 
 .offer__benefit-list {
   width: 20.7rem;
+  transition-delay: 0.5s;
 }
 
 .offer__btn-header {
@@ -313,7 +346,36 @@ button:hover {
 }
 
 
+.offer_text_top {
+  width: 38.7rem;
+  margin-bottom: 2rem;
+}
 
+.offer_20per {
+  width: 38.4rem;
+  transition: .7s;
+  transition-timing-function: ease-in-out;
+}
+
+.offer_20per__wrapper {
+  overflow: hidden;
+}
+
+.offer_20per {
+  transform: translateY(21rem);
+  transition-timing-function: ease-out;
+  opacity: 0;
+}
+
+.offer_20per__wrapper.isInViewed>.offer_20per {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.offer_text_bottom {
+  width: 36.4rem;
+  margin-top: 2rem;
+}
 
 /*
 // contents
@@ -323,13 +385,37 @@ button:hover {
   background: #e7c8bb;
 }
 
+.media-sns__items {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.media-sns__item {
+  transition: 0.7s;
+  transform: translateY(100%);
+}
+
+.isInViewed > .media-sns__item {
+  transform: translateY(0%);
+}
+
+.media-sns__item:nth-child(1) {
+  transition-delay: 0s;
+}
+.media-sns__item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.media-sns__item:nth-child(3) {
+  transition-delay: 0.6s;
+}
 
 .popup {
   background: #c9dad8;
 }
 
 
-
+/* nayami */
 .nayami {
   position: relative;
 }
@@ -373,7 +459,30 @@ button:hover {
   width: 39.3rem;
 }
 
+.nayami__header {
+  transition: 0.7s;
+  transform: translateY(-100%);
+}
 
+.nayami__header__wrapper {
+  overflow: hidden;
+}
+
+.nayami__header__wrapper.isInViewed > .nayami__header {
+  transform: translateY(0%);
+}
+
+.isInViewed > .fade_and_rotate {
+  animation: rotate 0.5s linear 1s;
+}
+
+@keyframes rotate {
+  0%, 50%, 100% { transform: rotate(0deg);}
+  25% {transform: rotate(2.5deg);}
+  75% {transform: rotate(-2.5deg);}
+}
+
+/* ng-care */
 .ng-care__header {
   background: #b6bdae;
   padding: 4.5rem 0;
@@ -408,13 +517,48 @@ button:hover {
   background-position: bottom left;
 }
 
-.ng-care__list:before {
+/* .ng-care__list:before {
   background: url("../images/ng-care__list--icon.png") no-repeat center center/100% auto;
   content: '';
   display: block;
   height: 4rem;
   margin: 0 2.6rem 0 0;
   width: 3.4rem;
+} */
+
+.ng-care__list__wrapper {
+  display: flex;
+}
+
+.ng-care__list__checkbox__wrapper {
+  position: relative;
+  padding-right: 2.5rem;
+  transform: translateY(1rem);
+}
+
+.ng-care__list__checkbox__wrapper > img {
+  vertical-align: bottom;
+}
+
+.ng-care__list__checkbox {
+  width: 3.5rem;
+  height: 3.5rem
+}
+
+.ng-care__list__check {
+  height: 2.9rem;
+  position: absolute;
+  top: -0.5rem;
+  left: 1.2rem;
+  object-fit: cover;
+  object-position: left;
+  transition-delay: 0.3s;
+  transition: 0.4s;
+  width: 0;
+}
+
+.isInViewed > .ng-care__list__check {
+  width: 1.8rem;
 }
 
 .ng-care__list01 {
@@ -452,6 +596,7 @@ button:hover {
 }
 
 
+/* causing */
 
 .causing {
   position: relative;
@@ -474,12 +619,12 @@ button:hover {
   width: 44.3rem;
 }
 
-.causing__header__text picture {
+.slide-up > * {
   transform: translateY(100%);
   transition: .7s;
 }
 
-.causing__header__text.isInViewed picture {
+.slide-up.isInViewed > * {
   transform: translateY(0%);
 }
 
@@ -548,6 +693,56 @@ button:hover {
   z-index: 2;
 }
 
+.isInViewed.js-zoomIn {
+  animation: zoomIn 0.7s;
+}
+
+@keyframes zoomIn {
+  0% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+}
+
+.causing__image01-4-2__wrapper {
+  width: 54.4rem;
+  height: 20rem;
+  position: relative;
+}
+
+.causing__image01-4-2__wrapper>img,
+.causing__image01-3-2__wrapper>img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: .7s;
+  transition-delay: 0.3s;
+}
+
+.causing__image01-4-2__wrapper>img {
+  clip: rect(0rem 0rem 20rem 0rem);
+}
+
+.causing__image01-3-2__wrapper>img {
+  clip: rect(0rem 47rem 20rem 47rem);
+}
+
+.causing__image01-4-2__wrapper.isInViewed>img {
+  clip: rect(0rem 54rem 20rem 0rem);
+}
+
+.causing__image01-3-2__wrapper.isInViewed>img {
+  clip: rect(0rem 47rem 20rem 0rem);
+}
+
+.causing__image01-3-2__wrapper {
+  width: 47rem;
+  height: 20rem;
+  position: relative;
+}
+
+/* requirement */
 
 .requirement {
   position: relative;
@@ -662,6 +857,32 @@ button:hover {
   transform: translateY(0%);
 }
 
+.features__image02 > * {
+  width: 63rem;
+  margin: 10rem auto;
+  opacity: 0;
+  filter: blur(1rem);
+  box-shadow: #ADB6C4 0rem 0rem 2rem;
+}
+
+.features__image02.isInViewed > * {
+  animation: blur-in 0.7s ease-out forwards;
+}
+
+@keyframes blur-in {
+  0% {
+    opacity: 0;
+    filter: blur(1rem);
+    box-shadow: #ADB6C4 0rem 0rem 2rem;
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0rem);
+    box-shadow: #ADB6C4 0rem 0rem 0rem;
+  }
+}
+
 .features__image04 {
   margin: 0 auto 0;
   position: relative;
@@ -682,6 +903,23 @@ button:hover {
 
 .features__image05 {
   margin: 0 0 0.3rem;
+  position: relative;
+}
+
+.features__image05__text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13.7rem;
+  height: 0;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.6s;
+  transition-delay: 0.3s;
+}
+
+.isInViewed > .features__image05__text {
+  height: 30.1rem;
 }
 
 .features__image06 {
@@ -752,6 +990,31 @@ button:hover {
   top: 116rem;
   width: 51.7rem;
 }
+
+.js-slideIn_l-r,
+.js-slideIn_r-l {
+  overflow: hidden;
+}
+
+.js-slideIn_l-r > * ,
+.js-slideIn_r-l > * {
+  transition-delay: 0.3s;
+  transition: 0.7s;
+}
+
+.js-slideIn_l-r > * {
+  transform: translateX(-100%);
+}
+
+.js-slideIn_r-l > * {
+  transform: translateX(100%);
+}
+
+.isInViewed.js-slideIn_l-r > * ,
+.isInViewed.js-slideIn_r-l > *  {
+  transform: translateX(0%);
+}
+
 
 .about-foam__content01 {
   position: relative;
@@ -836,11 +1099,37 @@ button:hover {
   width: 54.8rem;
 }
 
+.product-image01__item01 > * {
+  width: 0%;
+  object-fit: cover;
+  object-position: left;
+  transition: 0.7s;
+  transition-delay: 0.3s;
+  height: 21rem;
+}
+
+.isInViewed.product-image01__item01 > * {
+  width: 100%;
+}
+
 .product-image01__item02 {
   left: 60rem;
   position: absolute;
   top: 24.5rem;
   width: 8.7rem;
+}
+
+.product-image01__item02 > * {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.7s;
+  transition-delay: 0.3s;
+  height: 0rem;
+}
+
+.isInViewed.product-image01__item02 > * {
+  height: 60.1rem;
 }
 
 .product-image01__item03 {
@@ -1199,6 +1488,11 @@ button:hover {
   background: #fff;
   box-shadow: 0 0 0 0.1rem #7b587c, 0 0 0 0.9rem #fff, 0 0 0 1rem #7b587c;
   padding: 4rem 0 0;
+}
+
+.benefit__content__item02--wrapper {
+  transition-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .benefit__content__item02-header {

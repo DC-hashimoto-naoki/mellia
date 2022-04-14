@@ -20,11 +20,18 @@
 
   <main class="main">
 
+
     <section class="mv js-inview js-fadeInUp">
-      <picture>
-        <source srcset="images/webp/mv.webp" type="image/webp">
-        <img src="images/mv.png" alt="ALL in ONEで全身に使える 秘密を守る泡 I'm La Floria">
-      </picture>
+      <div class="fv__wrapper">
+        <picture>
+          <source srcset="images/parts/webp/fv_bg.webp" type="image/webp">
+          <img src="images/parts/fv_bg.png" alt="ALL in ONEで全身に使える 秘密を守る泡 I'm La Floria">
+        </picture>
+        <img class="fv_bottle js-inview js-fadeInUp js-fadeInDelay" data-delay-time=".2s"
+          src="./images/parts/fv_bottle.png" alt="">
+        <img class="fv_foam js-inview js-fadeInUp js-fadeInDelay" data-delay-time=".4s" src="./images/parts/fv_foam.png"
+          alt="">
+      </div>
     </section>
 
 
@@ -35,25 +42,28 @@
         <source srcset="images/webp/offer__image.webp" type="image/webp">
         <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="offer__description js-inview js-fadeIn js-popup js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/offer__description.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ 通常価格¥3,740（税込）定期初回限定20%OFF ¥2,992（税込）">
-      </picture>
-      <div class="offer__item--wrapper js-inview js-fadeInUp">
+      <div class="offer__parts offer__description">
+        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
+        <div class="offer_20per__wrapper js-inview">
+          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+        </div>
+        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
+      </div>
+      <div class="offer__item--wrapper">
         <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
               <img src="images/offer__benefit-list--01.png" alt="送料無料">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture class="js-inview">
               <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
               <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
               <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
@@ -81,75 +91,87 @@
 
 
     <section class="media-sns">
-      <picture class="js-inview js-fadeInUp">
-        <source srcset="images/webp/media-sns__media.webp" type="image/webp">
-        <img src="images/media-sns__media.png"
+      <picture class="js-inview">
+        <img src="images/parts/media-sns__media.png"
           alt="美的読者が選ぶ2021年ベストコスメボディケア&ヘアケア部門ボディウォッシュ編第1位 Mellia 株式会社デリケートボディウォッシュ PROMO 口コミランキング デリケートゾーンケア部門第1位 アイムラフロリア デリケートボディウォッシュ 雑誌やSNSで話題沸騰中！！">
       </picture>
-      <picture class="media-sns__instagram js-inview js-fadeIn">
+      <div class="media-sns__media__wrapper">
+        <ul class="media-sns__items js-inview">
+          <li class="media-sns__item"><img src="./images/parts/magazine01.png" alt="VOGUE"></li>
+          <li class="media-sns__item"><img src="./images/parts/magazine02.png" alt="25"></li>
+          <li class="media-sns__item"><img src="./images/parts/magazine03.png" alt="anan"></li>
+        </ul>
+      </div>
+      <picture class="media-sns__instagram js-inview">
         <source srcset="images/webp/media-sns__instagram.webp" type="image/webp">
-        <img class="js-inview js-fadeInUp" src="images/media-sns__instagram.png" alt="INSTAGRAM">
+        <img class="js-inview" src="images/media-sns__instagram.png" alt="INSTAGRAM">
       </picture>
     </section>
 
-    <section class="popup js-inview js-fadeInUp">
-      <picture class="js-inview js-fadeInUp">
+    <section class="popup js-inview">
+      <picture class="js-inview">
         <source srcset="images/webp/popup__image01.webp" type="image/webp">
-        <img class="js-inview js-fadeInUp" src="images/popup__image01.png" alt="POP UP多数開催 大手百貨店やショッピングモール40箇所以上で開催！">
+        <img class="js-inview" src="images/popup__image01.png" alt="POP UP多数開催 大手百貨店やショッピングモール40箇所以上で開催！">
       </picture>
-      <picture class="js-inview js-fadeInUp">
+      <picture class="js-inview js-slideIn_l-r">
         <source srcset="images/webp/popup__image02.webp" type="image/webp">
-        <img class="js-inview js-fadeInUp" src="images/popup__image02.png" alt="渋谷PARCO">
+        <img class="js-inview" src="images/popup__image02.png" alt="渋谷PARCO">
       </picture>
-      <picture class="js-inview js-fadeInUp">
+      <picture class="js-inview js-slideIn_r-l">
         <source srcset="images/webp/popup__image03.webp" type="image/webp">
-        <img class="js-inview js-fadeInUp" src="images/popup__image03.png" alt="新宿伊勢丹 その他、渋谷スクランブルスクエア、JR名古屋高島屋...etc">
+        <img class="js-inview" src="images/popup__image03.png" alt="新宿伊勢丹 その他、渋谷スクランブルスクエア、JR名古屋高島屋...etc">
       </picture>
     </section>
 
     <section class="nayami">
-      <div class="nayami__header">
-        <picture class="nayami__header__text js-inview js-fadeInUp">
-          <source srcset="images/webp/nayami__header__text.webp" type="image/webp">
-          <img src="images/nayami__header__text.png" alt="デリケートゾーンのこんな悩みありませんか？">
-        </picture>
+      <div class="nayami__header__wrapper js-inview">
+        <div class="nayami__header">
+          <picture class="nayami__header__text">
+            <source srcset="images/webp/nayami__header__text.webp" type="image/webp">
+            <img src="images/nayami__header__text.png" alt="デリケートゾーンのこんな悩みありませんか？">
+          </picture>
+        </div>
       </div>
-      <picture class="nayami__image01 js-inview js-fadeInUp">
+      <picture class="nayami__image01 js-inview">
         <source srcset="images/webp/nayami__image01.webp" type="image/webp">
         <img src="images/nayami__image01.png" alt="ニオイ">
       </picture>
       <picture class="nayami__fukidashi01 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/nayami__fukidashi01.webp" type="image/webp">
-        <img src="images/nayami__fukidashi01.png" alt="生理中や入浴前ショーツを下ろした瞬間「あれ…？」">
+        <source class="fade_and_rotate" srcset="images/webp/nayami__fukidashi01.webp" type="image/webp">
+        <img class="fade_and_rotate" src="images/nayami__fukidashi01.png" alt="生理中や入浴前ショーツを下ろした瞬間「あれ…？」">
       </picture>
-      <picture class="nayami__image02 js-inview js-fadeInUp">
+      <picture class="nayami__image02 js-inview">
         <source srcset="images/webp/nayami__image02.webp" type="image/webp">
         <img src="images/nayami__image02.png" alt="黒ずみ">
       </picture>
       <picture class="nayami__fukidashi02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/nayami__fukidashi02.webp" type="image/webp">
-        <img src="images/nayami__fukidashi02.png" alt="自分に自信が持てない積極的になれない…">
+        <source class="fade_and_rotate" srcset="images/webp/nayami__fukidashi02.webp" type="image/webp">
+        <img class="fade_and_rotate" src="images/nayami__fukidashi02.png" alt="自分に自信が持てない積極的になれない…">
       </picture>
-      <picture class="nayami__image03 js-inview js-fadeInUp">
+      <picture class="nayami__image03 js-inview">
         <source srcset="images/webp/nayami__image03.webp" type="image/webp">
         <img src="images/nayami__image03.png" alt="カサつき">
       </picture>
       <picture class="nayami__fukidashi03 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/nayami__fukidashi03.webp" type="image/webp">
-        <img src="images/nayami__fukidashi03.png" alt="ヒップラインまで乾燥…不快感でストレス…">
+        <source class="fade_and_rotate" srcset="images/webp/nayami__fukidashi03.webp" type="image/webp">
+        <img class="fade_and_rotate" src="images/nayami__fukidashi03.png" alt="ヒップラインまで乾燥…不快感でストレス…">
       </picture>
     </section>
 
     <section class="ng-care">
       <div class="ng-care__header">
-        <picture class="ng-care__header__text js-inview js-fadeInUp">
+        <picture class="ng-care__header__text js-inview">
           <source srcset="images/webp/ng-care__header__text.webp" type="image/webp">
           <img src="images/ng-care__header__text.png" alt="正しいケアできていますか？">
         </picture>
       </div>
-      <ul class="ng-care__list--wrapper js-inview js-fadeInUp">
+      <ul class="ng-care__list--wrapper js-inview">
         <li class="ng-care__list">
-          <div>
+          <div class="ng-care__list__wrapper">
+            <div class="ng-care__list__checkbox__wrapper js-inview">
+              <img class="ng-care__list__checkbox" src="./images/ng-care__list__checkbox.png" alt="">
+              <img class="ng-care__list__check" src="./images/ng-care__list__check.png" alt="">
+            </div>
             <picture class="ng-care__list01 js-inview js-marker">
               <source srcset="images/webp/ng-care__list01.webp" type="image/webp">
               <img src="images/ng-care__list01.png" alt="ゴシゴシ洗う">
@@ -157,39 +179,57 @@
           </div>
         </li>
         <li class="ng-care__list">
-          <div>
-            <picture class="ng-care__list02-1 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list02-1.webp" type="image/webp">
-              <img src="images/ng-care__list02-1.png" alt="洗浄力の強い">
-            </picture>
-            <picture class="ng-care__list02-2 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list02-2.webp" type="image/webp">
-              <img src="images/ng-care__list02-2.png" alt="ボディーソープを使っている">
-            </picture>
+          <div class="ng-care__list__wrapper">
+            <div class="ng-care__list__checkbox__wrapper js-inview">
+              <img class="ng-care__list__checkbox" src="./images/ng-care__list__checkbox.png" alt="">
+              <img class="ng-care__list__check" src="./images/ng-care__list__check.png" alt="">
+            </div>
+            <div>
+              <picture class="ng-care__list02-1 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list02-1.webp" type="image/webp">
+                <img src="images/ng-care__list02-1.png" alt="洗浄力の強い">
+              </picture>
+              <picture class="ng-care__list02-2 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list02-2.webp" type="image/webp">
+                <img src="images/ng-care__list02-2.png" alt="ボディーソープを使っている">
+              </picture>
+            </div>
           </div>
         </li>
         <li class="ng-care__list">
-          <div>
-            <picture class="ng-care__list03-1 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list03-1.webp" type="image/webp">
-              <img src="images/ng-care__list03-1.png" alt="中のほうまでキレイに">
-            </picture>
-            <picture class="ng-care__list03-2 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list03-2.webp" type="image/webp">
-              <img src="images/ng-care__list03-2.png" alt="しようと意識している">
-            </picture>
+          <div class="ng-care__list__wrapper">
+            <div class="ng-care__list__checkbox__wrapper js-inview">
+              <img class="ng-care__list__checkbox" src="./images/ng-care__list__checkbox.png" alt="">
+              <img class="ng-care__list__check" src="./images/ng-care__list__check.png" alt="">
+            </div>
+            <div>
+              <picture class="ng-care__list03-1 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list03-1.webp" type="image/webp">
+                <img src="images/ng-care__list03-1.png" alt="中のほうまでキレイに">
+              </picture>
+              <picture class="ng-care__list03-2 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list03-2.webp" type="image/webp">
+                <img src="images/ng-care__list03-2.png" alt="しようと意識している">
+              </picture>
+            </div>
           </div>
         </li>
         <li class="ng-care__list">
-          <div>
-            <picture class="ng-care__list04-1 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list04-1.webp" type="image/webp">
-              <img src="images/ng-care__list04-1.png" alt="強い力でこすって">
-            </picture>
-            <picture class="ng-care__list04-2 js-inview js-marker">
-              <source srcset="images/webp/ng-care__list04-2.webp" type="image/webp">
-              <img src="images/ng-care__list04-2.png" alt="拭いている">
-            </picture>
+          <div class="ng-care__list__wrapper">
+            <div class="ng-care__list__checkbox__wrapper js-inview">
+              <img class="ng-care__list__checkbox" src="./images/ng-care__list__checkbox.png" alt="">
+              <img class="ng-care__list__check" src="./images/ng-care__list__check.png" alt="">
+            </div>
+            <div>
+              <picture class="ng-care__list04-1 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list04-1.webp" type="image/webp">
+                <img src="images/ng-care__list04-1.png" alt="強い力でこすって">
+              </picture>
+              <picture class="ng-care__list04-2 js-inview js-marker">
+                <source srcset="images/webp/ng-care__list04-2.webp" type="image/webp">
+                <img src="images/ng-care__list04-2.png" alt="拭いている">
+              </picture>
+            </div>
           </div>
         </li>
       </ul>
@@ -197,7 +237,7 @@
 
     <section class="causing">
       <div class="causing__header">
-        <div class="causing__header__text js-inview">
+        <div class="causing__header__text slide-up js-inview">
           <picture>
             <source srcset="images/webp/causing__header__text.webp" type="image/webp">
             <img src="images/causing__header__text.png" alt="それトラブルの原因かも…">
@@ -206,40 +246,42 @@
       </div>
       <div class="causing__image--wrapper">
         <div class="causing__image01--wrapper">
-          <picture class="causing__image01 js-inview js-fadeInUp">
+          <picture class="causing__image01 js-inview">
             <source srcset="images/webp/causing__image01.webp" type="image/webp">
             <img src="images/causing__image01.png" alt="ニオイや黒ずみデリケートゾーンの不調の原因を作ってしまいます。">
           </picture>
-          <picture class="causing__image01-2 js-inview js-fadeInUp js-fadeInDelay" data-delay-time=".4s">
+          <picture class="causing__image01-2 js-inview js-zoomIn" data-delay-time=".4s">
             <source srcset="images/webp/causing__image01-2.webp" type="image/webp">
             <img src="images/causing__image01-2.png" alt="実は">
           </picture>
-          <div class="causing__image01-3--wrapper js-inview js-fadeInUp js-fadeInDelay" data-delay-time=".8s">
+          <div class="causing__image01-3--wrapper js-inview js-fadeInDelay" data-delay-time=".8s">
             <picture class="causing__image01-3-1">
               <source srcset="images/webp/causing__image01-3-1.webp" type="image/webp">
               <img src="images/causing__image01-3-1.png" alt="">
             </picture>
             <picture class="causing__image01-3-2">
-              <source srcset="images/webp/causing__image01-3-2.webp" type="image/webp">
-              <img src="images/causing__image01-3-2.png" alt="まぶた0.12〜0.2mm">
+              <div class="causing__image01-3-2__wrapper js-inview">
+                <img src="images/causing__image01-3-2.png" alt="まぶた0.12〜0.2mm">
+              </div>
             </picture>
           </div>
-          <div class="causing__image01-4--wrapper js-inview js-fadeInUp js-fadeInDelay" data-delay-time="1s">
+          <div class="causing__image01-4--wrapper js-inview" data-delay-time="1s">
             <picture class="causing__image01-4-1">
               <source srcset="images/webp/causing__image01-4-1.webp" type="image/webp">
               <img src="images/causing__image01-4-1.png" alt="">
             </picture>
             <picture class="causing__image01-4-2">
-              <source srcset="images/webp/causing__image01-4-2.webp" type="image/webp">
-              <img src="images/causing__image01-4-2.png" alt="デリケートゾーン0.08〜0.16mm">
+              <div class="causing__image01-4-2__wrapper js-inview">
+                <img src="images/causing__image01-4-2.png" alt="デリケートゾーン0.08〜0.16mm">
+              </div>
             </picture>
           </div>
-          <picture class="causing__image01-5 js-inview js-fadeInUp js-fadeInDelay" data-delay-time="1.2s">
-            <source srcset="images/webp/causing__image01-5.webp" type="image/webp">
-            <img src="images/causing__image01-5.png" alt="まぶたよりも皮膚が薄いデリケートゾーン。">
+          <picture class="causing__image01-5 js-inview js-fadeIn js-fadeInDelay" data-delay-time="0.7s">
+            <source class="fade_and_rotate" srcset="images/webp/causing__image01-5.webp" type="image/webp">
+            <img class="fade_and_rotate" src="images/causing__image01-5.png" alt="まぶたよりも皮膚が薄いデリケートゾーン。">
           </picture>
         </div>
-        <picture class="causing__image02 js-inview js-fadeInUp">
+        <picture class="causing__image02 js-inview">
           <source srcset="images/webp/causing__image02.webp" type="image/webp">
           <img src="images/causing__image02.png" alt="繊細な肌がダメージを受けて…さまざまなトラブルに！ニオイ くすみ※ カサつき ※乾燥による">
         </picture>
@@ -274,11 +316,11 @@
           <source srcset="images/webp/requirement__image02-fukidashi01.webp" type="image/webp">
           <img src="images/requirement__image02-fukidashi01.png" alt="全身用とアイテムを分けるのは面倒！">
         </picture>
-        <picture class="requirement__image02-fukidashi02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
+        <picture class="requirement__image02-fukidashi02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".4s">
           <source srcset="images/webp/requirement__image02-fukidashi02.webp" type="image/webp">
           <img src="images/requirement__image02-fukidashi02.png" alt="優しく洗うってどうすれば？">
         </picture>
-        <picture class="requirement__image02-fukidashi03 js-inview js-fadeIn js-fadeInDelay" data-delay-time="1s">
+        <picture class="requirement__image02-fukidashi03 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".7s">
           <source srcset="images/webp/requirement__image02-fukidashi03.webp" type="image/webp">
           <img src="images/requirement__image02-fukidashi03.png" alt="専用ケアってハードル高そう…">
         </picture>
@@ -294,33 +336,32 @@
           </picture>
         </div>
       </div>
-      <picture class="features__image01 js-inview js-fadeInUp">
+      <picture class="features__image01 js-inview js-fadeInDown">
         <source srcset="images/webp/features__image01.webp" type="image/webp">
         <img src="images/features__image01.png" alt="デリケートゾーンのことを本当に考え抜いたボディウォッシュ I'm La Floria アイムラフロリア">
       </picture>
-      <picture class="features__image02 js-inview js-fadeInUp">
-        <source srcset="images/webp/features__image02.webp" type="image/webp">
-        <img src="images/features__image02.png" alt="ALL in ONEで全身に使えるデリケートゾーンケア 秘密を守る泡">
+      <picture class="features__image02 js-inview">
+        <img src="images/parts/features__image02.png" alt="ALL in ONEで全身に使えるデリケートゾーンケア 秘密を守る泡">
       </picture>
-      <picture class="features__image03 js-inview js-fadeInUp">
+      <picture class="features__image03 js-inview">
         <source srcset="images/webp/features__image03.webp" type="image/webp">
         <img src="images/features__image03.png" alt="デリケートゾーンの３大お悩みにアプローチ ニオイ くすみ※ カサつき ※乾燥による">
       </picture>
       <div class="features__image04">
-        <picture class="features__image04 js-inview js-fadeInUp">
+        <picture class="features__image04 js-inview">
           <source srcset="images/webp/features__image04.webp" type="image/webp">
           <img src="images/features__image04.png" alt="さらに">
         </picture>
       </div>
-      <picture class="features__image05-header js-inview js-fadeInUp">
+      <picture class="features__image05-header js-inview">
         <source srcset="images/webp/features__image05-header.webp" type="image/webp">
         <img src="images/features__image05-header.png" alt="全身のケアにも使えるので使い分けなくてOK">
       </picture>
-      <picture class="features__image05 js-inview js-fadeInUp">
-        <source srcset="images/webp/features__image05.webp" type="image/webp">
-        <img src="images/features__image05.png" alt="これ１本で ALL in ONE">
-      </picture>
-      <div class="features__image06 js-inview js-fadeInUp">
+      <div class="features__image05 js-inview js-fadeIn">
+        <img src="./images/parts/features__image05.png" alt="">
+        <img class="features__image05__text" src="./images/parts/features__image05__text.png" alt="これ１本で ALL in ONE">
+      </div>
+      <div class="features__image06 js-inview">
         <picture class="features__image06">
           <source srcset="images/webp/features__image06.webp" type="image/webp">
           <img src="images/features__image06.png" alt="">
@@ -348,25 +389,28 @@
         <source srcset="images/webp/offer__image.webp" type="image/webp">
         <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="offer__description js-inview js-fadeIn js-popup js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/offer__description.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ 通常価格¥3,740（税込）定期初回限定20%OFF ¥2,992（税込）">
-      </picture>
-      <div class="offer__item--wrapper js-inview js-fadeInUp">
+      <div class="offer__parts offer__description">
+        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
+        <div class="offer_20per__wrapper js-inview">
+          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+        </div>
+        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
+      </div>
+      <div class="offer__item--wrapper">
         <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
               <img src="images/offer__benefit-list--01.png" alt="送料無料">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture class="js-inview">
               <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
               <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
               <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
@@ -396,29 +440,29 @@
 
     <section class="about-foam">
       <div class="about-foam__header--wrapper js-inview js-fadeInUp">
-        <picture class="about-foam__header js-inview js-fadeInUp">
+        <picture class="about-foam__header js-inview">
           <source srcset="images/webp/about-foam__header.webp" type="image/webp">
           <img src="images/about-foam__header.png" alt="秘密を守る泡とは?">
         </picture>
-        <picture class="about-foam__image js-inview js-fadeInUp">
+        <picture class="about-foam__image js-inview">
           <source srcset="images/webp/about-foam__image.webp" type="image/webp">
           <img src="images/about-foam__image.png" alt="アイムフロリア デリケートボディウォッシュ">
         </picture>
-        <picture class="about-foam__header-item01 js-inview js-fadeInUp">
+        <picture class="about-foam__header-item01 js-slideIn_l-r js-inview">
           <source srcset="images/webp/about-foam__header-item01.webp" type="image/webp">
           <img src="images/about-foam__header-item01.png" alt="Secret1 デリケートゾーンに合わせた弱酸性の優しい泡">
         </picture>
-        <picture class="about-foam__header-item02 js-inview js-fadeInUp">
+        <picture class="about-foam__header-item02 js-slideIn_r-l js-inview">
           <source srcset="images/webp/about-foam__header-item02.webp" type="image/webp">
           <img src="images/about-foam__header-item02.png" alt="Secret2 洗いながら保湿するW成分配合">
         </picture>
-        <picture class="about-foam__header-item03 js-inview js-fadeInUp js-fadeInDelay" data-delay-time=".5s">
+        <picture class="about-foam__header-item03 js-slideIn_l-r js-inview js-fadeInDelay" data-delay-time=".5s">
           <source srcset="images/webp/about-foam__header-item03.webp" type="image/webp">
           <img src="images/about-foam__header-item03.png" alt="Secret3 全身の透明感、底上げくすみケア成分配合">
         </picture>
       </div>
       <div class="about-foam__content01">
-        <picture class="about-foam__content01__icon js-inview js-fadeInUp">
+        <picture class="about-foam__content01__icon js-inview">
           <source srcset="images/webp/about-foam__content01__icon.webp" type="image/webp">
           <img src="images/about-foam__content01__icon.png" alt="Secret1">
         </picture>
@@ -426,23 +470,23 @@
           <source srcset="images/webp/about-foam__content01__image01-header.webp" type="image/webp">
           <img src="images/about-foam__content01__image01-header.png" alt="デリケートゾーンに合わせた弱酸性の優しい泡">
         </picture>
-        <picture class="about-foam__content01__image01 js-inview js-fadeInUp">
+        <picture class="about-foam__content01__image01 js-inview">
           <source srcset="images/webp/about-foam__content01__image01.webp" type="image/webp">
           <img src="images/about-foam__content01__image01.png"
             alt="顔には顔用、髪には髪用のケアがあるようにデリケートゾーンもデリケートゾーンに合ったケアが必要！泡立てやすい※泡で出るポンプではありませんアイムラフロリアはしみずに優しく洗えるのでデリケートゾーンの不快の元を軽減">
         </picture>
-        <picture class="about-foam__content01__copy js-inview js-fadeInUp">
+        <picture class="about-foam__content01__copy js-inview">
           <source srcset="images/webp/about-foam__content01__copy.webp" type="image/webp">
           <img src="images/about-foam__content01__copy.png" alt="手で簡単に泡立つ！優しい泡に。">
         </picture>
-        <picture class="about-foam__content01__image02 js-inview js-fadeInUp">
+        <picture class="about-foam__content01__image02 js-inview">
           <source srcset="images/webp/about-foam__content01__image02.webp" type="image/webp">
           <img src="images/about-foam__content01__image02.png"
             alt="さらに天然由来成分94％ 石油系界面活性剤 合成着色料 アルコール シリコン 紫外線吸収剤 鉱物油 パラペン 石油系界面活性剤 不使用 体の他の部分よりも繊細なデリケートゾーンに合わせた優しいフリー処方。">
         </picture>
       </div>
       <div class="about-foam__content02">
-        <picture class="about-foam__content02__icon js-inview js-fadeInUp">
+        <picture class="about-foam__content02__icon js-inview">
           <source srcset="images/webp/about-foam__content02__icon.webp" type="image/webp">
           <img src="images/about-foam__content02__icon.png" alt="Secret2">
         </picture>
@@ -450,21 +494,21 @@
           <source srcset="images/webp/about-foam__content02__image01-header.webp" type="image/webp">
           <img src="images/about-foam__content02__image01-header.png" alt="洗いながら保湿するW成分配合">
         </picture>
-        <picture class="about-foam__content02__image01 js-inview js-fadeInUp">
+        <picture class="about-foam__content02__image01 js-inview">
           <source srcset="images/webp/about-foam__content02__image01.webp" type="image/webp">
           <img src="images/about-foam__content02__image01.png" alt="デリケートゾーンは汗や尿、分泌物によって汚れが溜まりやすい場所">
         </picture>
-        <picture class="about-foam__content02__image01-footer js-inview js-fadeInUp">
+        <picture class="about-foam__content02__image01-footer js-inview">
           <source srcset="images/webp/about-foam__content02__image01-footer.webp" type="image/webp">
           <img src="images/about-foam__content02__image01-footer.png"
             alt="放置するとニオイの原因に繋がるのできちんと洗うことが重要ですが肌本来の潤いや守る機能は残しておきたい…">
         </picture>
-        <div class="about-foam__content02__image02--wrapper js-inview js-fadeInUp">
-          <picture class="about-foam__content02__image02-arrow js-inview js-fadeInUp">
+        <div class="about-foam__content02__image02--wrapper js-inview">
+          <picture class="about-foam__content02__image02-arrow js-inview">
             <source srcset="images/webp/about-foam__content02__image02-arrow.webp" type="image/webp">
             <img src="images/about-foam__content02__image02-arrow.png" alt="アイムラフロリアは洗う×保湿を実現！">
           </picture>
-          <picture class="about-foam__content02__image02-header js-inview js-fadeInUp">
+          <picture class="about-foam__content02__image02-header js-inview">
             <source srcset="images/webp/about-foam__content02__image02-header.webp" type="image/webp">
             <img src="images/about-foam__content02__image02-header.png" alt="アイムラフロリアは洗う×保湿を実現！">
           </picture>
@@ -489,7 +533,7 @@
         </div>
       </div>
       <div class="about-foam__content03">
-        <picture class="about-foam__content03__icon js-inview js-fadeInUp">
+        <picture class="about-foam__content03__icon js-inview">
           <source srcset="images/webp/about-foam__content03__icon.webp" type="image/webp">
           <img src="images/about-foam__content03__icon.png" alt="Secret3">
         </picture>
@@ -497,7 +541,7 @@
           <source srcset="images/webp/about-foam__content03__image01-header.webp" type="image/webp">
           <img src="images/about-foam__content03__image01-header.png" alt="全身の透明感、底上げくすみケア成分配合">
         </picture>
-        <picture class="about-foam__content03__image01 js-inview js-fadeInUp">
+        <picture class="about-foam__content03__image01 js-inview">
           <source srcset="images/webp/about-foam__content03__image01.webp" type="image/webp">
           <img src="images/about-foam__content03__image01.png"
             alt="デリケートゾーンのニオイケアだけではなく くすみケアまでアイムラフロリア1本で ビタミンC誘導体 ビタミンCを肌により浸透しやすくした成分 肌に潤いを与え、透明感のある肌へ導きます 3種類のフラワーエキス 高い保湿力があり潤いとハリのある肌へ導きます">
@@ -506,28 +550,28 @@
     </section>
 
 
-    <section class="product-image01 js-inview js-fadeInUp">
+    <section class="product-image01 js-inview">
       <picture class="product-image01__item">
         <source srcset="images/webp/product-image01__item.webp" type="image/webp">
         <img src="images/product-image01__item.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="product-image01__item01 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".4s">
+      <picture class="product-image01__item01 js-inview js-fadeInDelay">
         <source srcset="images/webp/product-image01__item01.webp" type="image/webp">
         <img src="images/product-image01__item01.png" alt="デリケートゾーンのことを本当に考え抜いたアイムラフロリアだからこそ">
       </picture>
-      <picture class="product-image01__item02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".4s">
+      <picture class="product-image01__item02 js-inview js-fadeInDelay">
         <source srcset="images/webp/product-image01__item02.webp" type="image/webp">
         <img src="images/product-image01__item02.png" alt="様々なデリケートゾーンの悩みにアプローチ 不快感も 気になるニオイも くすみ※も ※乾燥による">
       </picture>
-      <picture class="product-image01__item03 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".6s">
+      <picture class="product-image01__item03 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".3s">
         <source srcset="images/webp/product-image01__item03.webp" type="image/webp">
         <img src="images/product-image01__item03.png" alt="不快感も">
       </picture>
-      <picture class="product-image01__item04 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".8s">
+      <picture class="product-image01__item04 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
         <source srcset="images/webp/product-image01__item04.webp" type="image/webp">
         <img src="images/product-image01__item04.png" alt="気になるニオイも">
       </picture>
-      <picture class="product-image01__item05 js-inview js-fadeIn js-fadeInDelay" data-delay-time="1s">
+      <picture class="product-image01__item05 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".7s">
         <source srcset="images/webp/product-image01__item05.webp" type="image/webp">
         <img src="images/product-image01__item05.png" alt="くすみ※も ※乾燥による">
       </picture>
@@ -545,25 +589,28 @@
         <source srcset="images/webp/offer__image.webp" type="image/webp">
         <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="offer__description js-inview js-fadeIn js-popup js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/offer__description.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ 通常価格¥3,740（税込）定期初回限定20%OFF ¥2,992（税込）">
-      </picture>
-      <div class="offer__item--wrapper js-inview js-fadeInUp">
+      <div class="offer__parts offer__description">
+        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
+        <div class="offer_20per__wrapper js-inview">
+          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+        </div>
+        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
+      </div>
+      <div class="offer__item--wrapper">
         <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
               <img src="images/offer__benefit-list--01.png" alt="送料無料">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture class="js-inview">
               <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
               <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
               <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
@@ -592,7 +639,7 @@
 
     <section class="commitments">
       <div class="commitments__item--wrapper">
-        <picture class="commitments__header js-inview js-fadeInUp">
+        <picture class="commitments__header js-inview">
           <source srcset="images/webp/commitments__item__header.webp" type="image/webp">
           <img src="images/commitments__item__header.png"
             alt="自分にも、家族にも、地球にも優しく アイムラフロリアならではの3つのこだわり Three commitments">
@@ -646,11 +693,11 @@
           <source srcset="images/webp/howtouse__step__01.webp" type="image/webp">
           <img src="images/howtouse__step__01.png" alt="1.ぬるま湯ですすぐ 35〜37℃">
         </picture>
-        <picture class="howtouse__step__02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".5s">
+        <picture class="howtouse__step__02 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".4s">
           <source srcset="images/webp/howtouse__step__02.webp" type="image/webp">
           <img src="images/howtouse__step__02.png" alt="2.デリケートボディウォッシュを泡立てる">
         </picture>
-        <picture class="howtouse__step__03 js-inview js-fadeIn js-fadeInDelay" data-delay-time="1s">
+        <picture class="howtouse__step__03 js-inview js-fadeIn js-fadeInDelay" data-delay-time=".7s">
           <source srcset="images/webp/howtouse__step__03.webp" type="image/webp">
           <img src="images/howtouse__step__03.png" alt="3.指の腹を使って前から後ろに洗う">
         </picture>
@@ -669,25 +716,28 @@
         <source srcset="images/webp/offer__image.webp" type="image/webp">
         <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="offer__description js-inview js-fadeIn js-popup js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/offer__description.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ 通常価格¥3,740（税込）定期初回限定20%OFF ¥2,992（税込）">
-      </picture>
-      <div class="offer__item--wrapper js-inview js-fadeInUp">
+      <div class="offer__parts offer__description">
+        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
+        <div class="offer_20per__wrapper js-inview">
+          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+        </div>
+        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
+      </div>
+      <div class="offer__item--wrapper">
         <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
               <img src="images/offer__benefit-list--01.png" alt="送料無料">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture class="js-inview">
               <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
               <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
               <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
@@ -714,12 +764,12 @@
 
 
     <section class="uservoice">
-      <picture class="uservoice__header js-inview js-fadeInUp">
+      <picture class="uservoice__header js-inview">
         <source srcset="images/webp/uservoice__header.webp" type="image/webp">
         <img src="images/uservoice__header.png" alt="#I’m La Floria使ってます">
       </picture>
       <ul class="uservoice__list--wrapper">
-        <li class="uservoice__list js-inview js-fadeInUp">
+        <li class="uservoice__list js-inview">
           <picture>
             <source srcset="images/webp/uservoice__list--01.webp" type="image/webp">
             <img src="images/uservoice__list--01.png"
@@ -731,7 +781,7 @@
             <img src="images/uservoice__list--01_continued-part.png" alt="">
           </picture>
         </li>
-        <li class="uservoice__list js-inview js-fadeInUp">
+        <li class="uservoice__list js-inview">
           <picture>
             <source srcset="images/webp/uservoice__list--02.webp" type="image/webp">
             <img src="images/uservoice__list--02.png"
@@ -743,7 +793,7 @@
             <img src="images/uservoice__list--02_continued-part.png" alt="">
           </picture>
         </li>
-        <li class="uservoice__list js-inview js-fadeInUp">
+        <li class="uservoice__list js-inview">
           <picture>
             <source srcset="images/webp/uservoice__list--03.webp" type="image/webp">
             <img src="images/uservoice__list--03.png"
@@ -759,7 +809,7 @@
     </section>
 
 
-    <section class="faq js-inview js-fadeInUp">
+    <section class="faq js-inview">
       <picture class="faq__header">
         <source srcset="images/webp/faq__header.webp" type="image/webp">
         <img src="images/faq__header.png" alt="Q&A よくあるご質問">
@@ -821,11 +871,11 @@
     </section>
 
     <section class="benefit">
-      <picture class="benefit__header js-inview js-fadeInUp">
+      <picture class="benefit__header js-inview">
         <source srcset="images/webp/benefit__header.webp" type="image/webp">
         <img src="images/benefit__header.png" alt="毎日の習慣にしていただきたいから お得な定期便コース">
       </picture>
-      <div class="benefit__content--wrapper js-inview js-fadeInUp">
+      <div class="benefit__content--wrapper js-inview">
         <div class="benefit__content__item01--wrapper">
           <picture class="benefit__content__item01">
             <source srcset="images/webp/benefit__content__item01.webp" type="image/webp">
@@ -912,25 +962,28 @@
         <source srcset="images/webp/offer__image.webp" type="image/webp">
         <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
       </picture>
-      <picture class="offer__description js-inview js-fadeIn js-popup js-fadeInDelay" data-delay-time=".5s">
-        <source srcset="images/webp/offer__description.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ 通常価格¥3,740（税込）定期初回限定20%OFF ¥2,992（税込）">
-      </picture>
-      <div class="offer__item--wrapper js-inview js-popup">
+      <div class="offer__parts offer__description">
+        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
+        <div class="offer_20per__wrapper js-inview">
+          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+        </div>
+        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
+      </div>
+      <div class="offer__item--wrapper">
         <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
               <img src="images/offer__benefit-list--01.png" alt="送料無料">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture class="js-inview">
               <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
               <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
             </picture>
           </li>
-          <li class="offer__benefit-list">
+          <li class="offer__benefit-list js-inview js-fadeIn">
             <picture>
               <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
               <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
