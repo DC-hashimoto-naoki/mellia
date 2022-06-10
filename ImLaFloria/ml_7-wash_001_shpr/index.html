@@ -11,7 +11,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/picturefill.min.js"></script>
-  <!--<script src="js/jquery.inview.min.js"></script>-->
   <script src="js/modernizr-custom.js"></script>
 </head>
 
@@ -36,55 +35,44 @@
 
 
 
-    <!-- offer offer-under-main-visual -->
-    <section class="section offer">
-      <picture class="offer__image">
-        <source srcset="images/webp/offer__image.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
-      </picture>
-      <div class="offer__parts offer__description">
-        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
-        <div class="offer_20per__wrapper js-inview">
-          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+    <!-- offer offer-newCTA-->
+    <section class="section offer--newCTA">
+      <img class="offer__new_title_head" src="./images/parts_newCTA/offer__new_title_head.png" alt="">
+      <img class="offer__new_image--01" src="./images/parts_newCTA/offer__new_image--01.png" alt="">
+      <img class="offer__new_annotation--01" src="./images/parts_newCTA/offer__new_annotation--01.png" alt="">
+      <div class="offer__image__wrapper">
+        <img class="offer__new_image" src="./images/parts_newCTA/offer__image.png" alt="">
+        <div class="offer__new_description">
+          <img class="offer__description_top" src="./images/parts_newCTA/offer__description_top.png" alt="">
+          <div class="offer__description_20per__wrapper js-inview">
+            <img class="offer__description_20per" src="./images/parts_newCTA/offer__description_20per.png" alt="">
+          </div>
+          <img class="offer__description_price" src="./images/parts_newCTA/offer__description_price.png" alt="">
         </div>
-        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
-      </div>
-      <div class="offer__item--wrapper">
-        <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
-              <img src="images/offer__benefit-list--01.png" alt="送料無料">
-            </picture>
+        <ul class="offer__new_benefit-list">
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--01.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture class="js-inview">
-              <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
-              <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--02.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
-              <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--03.png" alt="">
           </li>
         </ul>
-        <picture class="offer__btn-header">
-          <source srcset="images/webp/offer__btn-header.webp" type="image/webp">
-          <img src="images/offer__btn-header.png" alt="初めての方、限定の特別なご案内">
-        </picture>
-        <a class="offer__btn" href="#formArea" data-jump-variant-id="100">
-          <picture>
-            <source srcset="images/webp/offer__btn.webp" type="image/webp">
-            <img src="images/offer__btn.png" alt="今すぐ20％OFFでお試し">
-          </picture>
+        <img class="offer__content_annotation--01" src="./images/parts_newCTA/offer__content_annotation--01.png" alt="">
+      </div>
+      <div class="offer__cta--01">
+        <img class="offer__tanpin_title" src="./images/parts_newCTA/offer__tanpin_title.png" alt="">
+        <a class="offer__cta_btn--01_link" href="#formArea" data-jump-variant-id="100">
+          <img class="offer__cta_btn--01" src="./images/parts_newCTA/offer__cta_btn--01.png" alt="">
         </a>
-        <picture class="offer__footnote">
-          <source srcset="images/webp/offer__footnote.webp" type="image/webp">
-          <img src="images/offer__footnote.png"
-            alt="※ 2回目以降は10%OFF、3,366円（税込）でお届けします。※ 1か月に1回の自動お届けコースです。※ 2回目以降からはいつでも周期変更、一時停止、解約、再開のお手続きが可能です。（次回発送予定の10日前まで）">
-        </picture>
+      </div>
+      <div class="offer__cta--02">
+        <img class="offer__tanpin_content" src="./images/parts_newCTA/offer__tanpin_content.png" alt="">
+        <a class="offer__cta_btn--02_link" href="#formArea" data-jump-variant-id="98">
+          <img class="offer__cta_btn--02" src="./images/parts_newCTA/offer__cta_btn--02.png" alt="">
+        </a>
       </div>
     </section>
 
@@ -379,62 +367,47 @@
 
 
 
-    <!-- offer offer-include-brand-logo-->
-    <section class="section offer offer--logoType">
-      <picture class="offer__logo">
-        <source srcset="images/webp/offer__logo.webp" type="image/webp">
-        <img src="images/offer__logo.png" alt="I'm La Floria">
-      </picture>
-      <picture class="offer__image">
-        <source srcset="images/webp/offer__image.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
-      </picture>
-      <div class="offer__parts offer__description">
-        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
-        <div class="offer_20per__wrapper js-inview">
-          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+
+    <!-- offer offer-newCTA-->
+    <section class="section offer--newCTA">
+      <img class="offer__new_title_head" src="./images/parts_newCTA/offer__new_title_head.png" alt="">
+      <img class="offer__new_image--01" src="./images/parts_newCTA/offer__new_image--01.png" alt="">
+      <img class="offer__new_annotation--01" src="./images/parts_newCTA/offer__new_annotation--01.png" alt="">
+      <div class="offer__image__wrapper">
+        <img class="offer__new_image" src="./images/parts_newCTA/offer__image.png" alt="">
+        <div class="offer__new_description">
+          <img class="offer__description_top" src="./images/parts_newCTA/offer__description_top.png" alt="">
+          <div class="offer__description_20per__wrapper js-inview">
+            <img class="offer__description_20per" src="./images/parts_newCTA/offer__description_20per.png" alt="">
+          </div>
+          <img class="offer__description_price" src="./images/parts_newCTA/offer__description_price.png" alt="">
         </div>
-        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
-      </div>
-      <div class="offer__item--wrapper">
-        <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
-              <img src="images/offer__benefit-list--01.png" alt="送料無料">
-            </picture>
+        <ul class="offer__new_benefit-list">
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--01.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture class="js-inview">
-              <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
-              <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--02.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
-              <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--03.png" alt="">
           </li>
         </ul>
-        <picture class="offer__btn-header">
-          <source srcset="images/webp/offer__btn-header.webp" type="image/webp">
-          <img src="images/offer__btn-header.png" alt="初めての方、限定の特別なご案内">
-        </picture>
-        <a class="offer__btn" href="#formArea" data-jump-variant-id="100">
-          <picture>
-            <source srcset="images/webp/offer__btn.webp" type="image/webp">
-            <img src="images/offer__btn.png" alt="今すぐ20％OFFでお試し">
-          </picture>
+        <img class="offer__content_annotation--01" src="./images/parts_newCTA/offer__content_annotation--01.png" alt="">
+      </div>
+      <div class="offer__cta--01">
+        <img class="offer__tanpin_title" src="./images/parts_newCTA/offer__tanpin_title.png" alt="">
+        <a class="offer__cta_btn--01_link" href="#formArea" data-jump-variant-id="100">
+          <img class="offer__cta_btn--01" src="./images/parts_newCTA/offer__cta_btn--01.png" alt="">
         </a>
-        <picture class="offer__footnote">
-          <source srcset="images/webp/offer__footnote.webp" type="image/webp">
-          <img src="images/offer__footnote.png"
-            alt="※ 2回目以降は10%OFF、3,366円（税込）でお届けします。※ 1か月に1回の自動お届けコースです。※ 2回目以降からはいつでも周期変更、一時停止、解約、再開のお手続きが可能です。（次回発送予定の10日前まで）">
-        </picture>
+      </div>
+      <div class="offer__cta--02">
+        <img class="offer__tanpin_content" src="./images/parts_newCTA/offer__tanpin_content.png" alt="">
+        <a class="offer__cta_btn--02_link" href="#formArea" data-jump-variant-id="98">
+          <img class="offer__cta_btn--02" src="./images/parts_newCTA/offer__cta_btn--02.png" alt="">
+        </a>
       </div>
     </section>
-
 
 
 
@@ -579,59 +552,44 @@
 
 
 
-    <!-- offer offer-include-brand-logo-->
-    <section class="section offer offer--logoType">
-      <picture class="offer__logo">
-        <source srcset="images/webp/offer__logo.webp" type="image/webp">
-        <img src="images/offer__logo.png" alt="I'm La Floria">
-      </picture>
-      <picture class="offer__image">
-        <source srcset="images/webp/offer__image.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
-      </picture>
-      <div class="offer__parts offer__description">
-        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
-        <div class="offer_20per__wrapper js-inview">
-          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+    <!-- offer offer-newCTA-->
+    <section class="section offer--newCTA">
+      <img class="offer__new_title_head" src="./images/parts_newCTA/offer__new_title_head.png" alt="">
+      <img class="offer__new_image--01" src="./images/parts_newCTA/offer__new_image--01.png" alt="">
+      <img class="offer__new_annotation--01" src="./images/parts_newCTA/offer__new_annotation--01.png" alt="">
+      <div class="offer__image__wrapper">
+        <img class="offer__new_image" src="./images/parts_newCTA/offer__image.png" alt="">
+        <div class="offer__new_description">
+          <img class="offer__description_top" src="./images/parts_newCTA/offer__description_top.png" alt="">
+          <div class="offer__description_20per__wrapper js-inview">
+            <img class="offer__description_20per" src="./images/parts_newCTA/offer__description_20per.png" alt="">
+          </div>
+          <img class="offer__description_price" src="./images/parts_newCTA/offer__description_price.png" alt="">
         </div>
-        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
-      </div>
-      <div class="offer__item--wrapper">
-        <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
-              <img src="images/offer__benefit-list--01.png" alt="送料無料">
-            </picture>
+        <ul class="offer__new_benefit-list">
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--01.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture class="js-inview">
-              <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
-              <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--02.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
-              <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--03.png" alt="">
           </li>
         </ul>
-        <picture class="offer__btn-header">
-          <source srcset="images/webp/offer__btn-header.webp" type="image/webp">
-          <img src="images/offer__btn-header.png" alt="初めての方、限定の特別なご案内">
-        </picture>
-        <a class="offer__btn" href="#formArea" data-jump-variant-id="100">
-          <picture>
-            <source srcset="images/webp/offer__btn.webp" type="image/webp">
-            <img src="images/offer__btn.png" alt="今すぐ20％OFFでお試し">
-          </picture>
+        <img class="offer__content_annotation--01" src="./images/parts_newCTA/offer__content_annotation--01.png" alt="">
+      </div>
+      <div class="offer__cta--01">
+        <img class="offer__tanpin_title" src="./images/parts_newCTA/offer__tanpin_title.png" alt="">
+        <a class="offer__cta_btn--01_link" href="#formArea" data-jump-variant-id="100">
+          <img class="offer__cta_btn--01" src="./images/parts_newCTA/offer__cta_btn--01.png" alt="">
         </a>
-        <picture class="offer__footnote">
-          <source srcset="images/webp/offer__footnote.webp" type="image/webp">
-          <img src="images/offer__footnote.png"
-            alt="※ 2回目以降は10%OFF、3,366円（税込）でお届けします。※ 1か月に1回の自動お届けコースです。※ 2回目以降からはいつでも周期変更、一時停止、解約、再開のお手続きが可能です。（次回発送予定の10日前まで）">
-        </picture>
+      </div>
+      <div class="offer__cta--02">
+        <img class="offer__tanpin_content" src="./images/parts_newCTA/offer__tanpin_content.png" alt="">
+        <a class="offer__cta_btn--02_link" href="#formArea" data-jump-variant-id="98">
+          <img class="offer__cta_btn--02" src="./images/parts_newCTA/offer__cta_btn--02.png" alt="">
+        </a>
       </div>
     </section>
 
@@ -706,59 +664,44 @@
 
 
 
-    <!-- offer offer-include-brand-logo-->
-    <section class="section offer offer--logoType">
-      <picture class="offer__logo">
-        <source srcset="images/webp/offer__logo.webp" type="image/webp">
-        <img src="images/offer__logo.png" alt="I'm La Floria">
-      </picture>
-      <picture class="offer__image">
-        <source srcset="images/webp/offer__image.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
-      </picture>
-      <div class="offer__parts offer__description">
-        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
-        <div class="offer_20per__wrapper js-inview">
-          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+    <!-- offer offer-newCTA-->
+    <section class="section offer--newCTA">
+      <img class="offer__new_title_head" src="./images/parts_newCTA/offer__new_title_head.png" alt="">
+      <img class="offer__new_image--01" src="./images/parts_newCTA/offer__new_image--01.png" alt="">
+      <img class="offer__new_annotation--01" src="./images/parts_newCTA/offer__new_annotation--01.png" alt="">
+      <div class="offer__image__wrapper">
+        <img class="offer__new_image" src="./images/parts_newCTA/offer__image.png" alt="">
+        <div class="offer__new_description">
+          <img class="offer__description_top" src="./images/parts_newCTA/offer__description_top.png" alt="">
+          <div class="offer__description_20per__wrapper js-inview">
+            <img class="offer__description_20per" src="./images/parts_newCTA/offer__description_20per.png" alt="">
+          </div>
+          <img class="offer__description_price" src="./images/parts_newCTA/offer__description_price.png" alt="">
         </div>
-        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
-      </div>
-      <div class="offer__item--wrapper">
-        <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
-              <img src="images/offer__benefit-list--01.png" alt="送料無料">
-            </picture>
+        <ul class="offer__new_benefit-list">
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--01.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture class="js-inview">
-              <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
-              <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--02.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
-              <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--03.png" alt="">
           </li>
         </ul>
-        <picture class="offer__btn-header">
-          <source srcset="images/webp/offer__btn-header.webp" type="image/webp">
-          <img src="images/offer__btn-header.png" alt="初めての方、限定の特別なご案内">
-        </picture>
-        <a class="offer__btn" href="#formArea" data-jump-variant-id="100">
-          <picture>
-            <source srcset="images/webp/offer__btn.webp" type="image/webp">
-            <img src="images/offer__btn.png" alt="今すぐ20％OFFでお試し">
-          </picture>
+        <img class="offer__content_annotation--01" src="./images/parts_newCTA/offer__content_annotation--01.png" alt="">
+      </div>
+      <div class="offer__cta--01">
+        <img class="offer__tanpin_title" src="./images/parts_newCTA/offer__tanpin_title.png" alt="">
+        <a class="offer__cta_btn--01_link" href="#formArea" data-jump-variant-id="100">
+          <img class="offer__cta_btn--01" src="./images/parts_newCTA/offer__cta_btn--01.png" alt="">
         </a>
-        <picture class="offer__footnote">
-          <source srcset="images/webp/offer__footnote.webp" type="image/webp">
-          <img src="images/offer__footnote.png"
-            alt="※ 2回目以降は10%OFF、3,366円（税込）でお届けします。※ 1か月に1回の自動お届けコースです。※ 2回目以降からはいつでも周期変更、一時停止、解約、再開のお手続きが可能です。（次回発送予定の10日前まで）">
-        </picture>
+      </div>
+      <div class="offer__cta--02">
+        <img class="offer__tanpin_content" src="./images/parts_newCTA/offer__tanpin_content.png" alt="">
+        <a class="offer__cta_btn--02_link" href="#formArea" data-jump-variant-id="98">
+          <img class="offer__cta_btn--02" src="./images/parts_newCTA/offer__cta_btn--02.png" alt="">
+        </a>
       </div>
     </section>
 
@@ -952,72 +895,43 @@
     </section>
 
 
-    <!-- offer offer-include-brand-logo with tanpin offer -->
-    <section class="section offer offer--logoType offer--last">
-      <picture class="offer__logo">
-        <source srcset="images/webp/offer__logo.webp" type="image/webp">
-        <img src="images/offer__logo.png" alt="I'm La Floria">
-      </picture>
-      <picture class="offer__image">
-        <source srcset="images/webp/offer__image.webp" type="image/webp">
-        <img src="images/offer__image.png" alt="アイムラフロリア デリケートボディウォッシュ">
-      </picture>
-      <div class="offer__parts offer__description">
-        <img class="offer_text_top" src="./images/parts/offer_text_top.png" alt="">
-        <div class="offer_20per__wrapper js-inview">
-          <img class="offer_20per" src="./images/parts/offer_20per.png" alt="20%OFF">
+    <!-- offer offer-newCTA-->
+    <section class="section offer--newCTA">
+      <img class="offer__new_title_head" src="./images/parts_newCTA/offer__new_title_head.png" alt="">
+      <img class="offer__new_image--01" src="./images/parts_newCTA/offer__new_image--01.png" alt="">
+      <img class="offer__new_annotation--01" src="./images/parts_newCTA/offer__new_annotation--01.png" alt="">
+      <div class="offer__image__wrapper">
+        <img class="offer__new_image" src="./images/parts_newCTA/offer__image.png" alt="">
+        <div class="offer__new_description">
+          <img class="offer__description_top" src="./images/parts_newCTA/offer__description_top.png" alt="">
+          <div class="offer__description_20per__wrapper js-inview">
+            <img class="offer__description_20per" src="./images/parts_newCTA/offer__description_20per.png" alt="">
+          </div>
+          <img class="offer__description_price" src="./images/parts_newCTA/offer__description_price.png" alt="">
         </div>
-        <img class="offer_text_bottom" src="./images/parts/offer_text_bottom.png" alt="">
-      </div>
-      <div class="offer__item--wrapper">
-        <ul class="offer__benefit-list--wrapper">
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--01.webp" type="image/webp">
-              <img src="images/offer__benefit-list--01.png" alt="送料無料">
-            </picture>
+        <ul class="offer__new_benefit-list">
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--01.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture class="js-inview">
-              <source srcset="images/webp/offer__benefit-list--02.webp" type="image/webp">
-              <img src="images/offer__benefit-list--02.png" alt="いつでも解約OK">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--02.png" alt="">
           </li>
-          <li class="offer__benefit-list js-inview js-fadeIn">
-            <picture>
-              <source srcset="images/webp/offer__benefit-list--03.webp" type="image/webp">
-              <img src="images/offer__benefit-list--03.png" alt="2回目以降10％OFF">
-            </picture>
+          <li class="js-inview js-fadeIn">
+            <img class="offer__new_benefit-list_item" src="./images/parts_newCTA/offer__benefit-list--03.png" alt="">
           </li>
         </ul>
-        <picture class="offer__btn-header">
-          <source srcset="images/webp/offer__btn-header.webp" type="image/webp">
-          <img src="images/offer__btn-header.png" alt="初めての方、限定の特別なご案内">
-        </picture>
-        <a class="offer__btn" href="#formArea" data-jump-variant-id="100">
-          <picture>
-            <source srcset="images/webp/offer__btn.webp" type="image/webp">
-            <img src="images/offer__btn.png" alt="今すぐ20％OFFでお試し">
-          </picture>
-        </a>
-        <picture class="offer__footnote">
-          <source srcset="images/webp/offer__footnote.webp" type="image/webp">
-          <img src="images/offer__footnote.png"
-            alt="※ 2回目以降は10%OFF、3,366円（税込）でお届けします。※ 1か月に1回の自動お届けコースです。※ 2回目以降からはいつでも周期変更、一時停止、解約、再開のお手続きが可能です。（次回発送予定の10日前まで）">
-        </picture>
+        <img class="offer__content_annotation--01" src="./images/parts_newCTA/offer__content_annotation--01.png" alt="">
       </div>
-
-      <!-- tanpin offer-->
-      <div class="offer__tanpin js-inview js-fadeInUp">
-        <picture>
-          <source srcset="images/webp/offer__tanpin__info.webp" type="image/webp">
-          <img src="images/offer__tanpin__info.png" alt="今回のみご注文の方 デリケートボディウォッシュ 250mlイヴピアッツェローズの香り 単品価格¥3,740（税込）+送料">
-        </picture>
-        <a class="offer__tanpin__btn" href="#formArea" data-jump-variant-id="98">
-          <picture>
-            <source srcset="images/webp/offer__tanpin__btn.webp" type="image/webp">
-            <img src="images/offer__tanpin__btn.png" alt="まずは試してみる">
-          </picture>
+      <div class="offer__cta--01">
+        <img class="offer__tanpin_title" src="./images/parts_newCTA/offer__tanpin_title.png" alt="">
+        <a class="offer__cta_btn--01_link" href="#formArea" data-jump-variant-id="100">
+          <img class="offer__cta_btn--01" src="./images/parts_newCTA/offer__cta_btn--01.png" alt="">
+        </a>
+      </div>
+      <div class="offer__cta--02">
+        <img class="offer__tanpin_content" src="./images/parts_newCTA/offer__tanpin_content.png" alt="">
+        <a class="offer__cta_btn--02_link" href="#formArea" data-jump-variant-id="98">
+          <img class="offer__cta_btn--02" src="./images/parts_newCTA/offer__cta_btn--02.png" alt="">
         </a>
       </div>
     </section>

@@ -377,6 +377,113 @@ button:hover {
   margin-top: 2rem;
 }
 
+.offer--newCTA {
+  background-color: #f2efea;
+}
+
+/* new CTA parts */
+
+.offer--newCTA {
+  padding: 3rem 3.5rem 3.8rem;
+}
+
+.offer__new_title_head,
+.offer__new_image--01,
+.offer__new_annotation--01,
+.offer__tanpin_title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__new_title_head {
+  width: 63.2rem;
+}
+
+.offer__new_image--01 {
+  width: 68.3rem;
+}
+
+.offer__new_annotation--01 {
+  width: 58rem;
+  margin-bottom: 3rem;
+}
+
+.offer__image__wrapper {
+  position: relative;
+}
+
+.offer__new_description {
+  position: absolute;
+  top: 9rem;
+  right: 4rem;
+  width: 38.4rem;
+}
+
+.offer__description_20per__wrapper {
+  overflow: hidden;
+}
+
+.offer__description_20per {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  transform: translateY(21rem);
+  transition-timing-function: ease-out;
+  transition: .7s;
+  opacity: 0;
+}
+
+.isInViewed > .offer__description_20per {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.offer__new_benefit-list {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 18rem;
+  width: 100%;
+}
+
+.offer__new_benefit-list > li {
+  transition-delay: 0.5s;
+}
+
+.offer__new_benefit-list_item {
+  width: 20rem;
+}
+
+.offer__content_annotation--01 {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 62rem;
+}
+
+.offer__cta--01 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.offer__tanpin_title {
+  width: 41.8rem;
+  transform: translateY(2rem);
+}
+
+.offer__cta--02 {
+  position: relative;
+}
+
+.offer__cta_btn--02 {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.offer__cta_btn--01_link {
+  animation: expansion 2s infinite;
+}
+
 /*
 // contents
 */
@@ -396,16 +503,18 @@ button:hover {
   transform: translateY(100%);
 }
 
-.isInViewed > .media-sns__item {
+.isInViewed>.media-sns__item {
   transform: translateY(0%);
 }
 
 .media-sns__item:nth-child(1) {
   transition-delay: 0s;
 }
+
 .media-sns__item:nth-child(2) {
   transition-delay: 0.3s;
 }
+
 .media-sns__item:nth-child(3) {
   transition-delay: 0.6s;
 }
@@ -468,18 +577,29 @@ button:hover {
   overflow: hidden;
 }
 
-.nayami__header__wrapper.isInViewed > .nayami__header {
+.nayami__header__wrapper.isInViewed>.nayami__header {
   transform: translateY(0%);
 }
 
-.isInViewed > .fade_and_rotate {
+.isInViewed>.fade_and_rotate {
   animation: rotate 0.5s linear 1s;
 }
 
 @keyframes rotate {
-  0%, 50%, 100% { transform: rotate(0deg);}
-  25% {transform: rotate(2.5deg);}
-  75% {transform: rotate(-2.5deg);}
+
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2.5deg);
+  }
+
+  75% {
+    transform: rotate(-2.5deg);
+  }
 }
 
 /* ng-care */
@@ -536,7 +656,7 @@ button:hover {
   transform: translateY(1rem);
 }
 
-.ng-care__list__checkbox__wrapper > img {
+.ng-care__list__checkbox__wrapper>img {
   vertical-align: bottom;
 }
 
@@ -557,7 +677,7 @@ button:hover {
   width: 0;
 }
 
-.isInViewed > .ng-care__list__check {
+.isInViewed>.ng-care__list__check {
   width: 1.8rem;
 }
 
@@ -619,12 +739,12 @@ button:hover {
   width: 44.3rem;
 }
 
-.slide-up > * {
+.slide-up>* {
   transform: translateY(100%);
   transition: .7s;
 }
 
-.slide-up.isInViewed > * {
+.slide-up.isInViewed>* {
   transform: translateY(0%);
 }
 
@@ -698,9 +818,17 @@ button:hover {
 }
 
 @keyframes zoomIn {
-  0% {transform: scale(0.5);}
-  100% {transform: scale(1);}
-  50% {transform: scale(1.2);}
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .causing__image01-4-2__wrapper {
@@ -857,7 +985,7 @@ button:hover {
   transform: translateY(0%);
 }
 
-.features__image02 > * {
+.features__image02>* {
   width: 63rem;
   margin: 10rem auto 2rem;
   opacity: 0;
@@ -865,7 +993,7 @@ button:hover {
   box-shadow: #ADB6C4 0rem 0rem 2rem;
 }
 
-.features__image02.isInViewed > * {
+.features__image02.isInViewed>* {
   animation: blur-in 0.7s ease-out forwards;
 }
 
@@ -918,7 +1046,7 @@ button:hover {
   transition-delay: 0.3s;
 }
 
-.isInViewed > .features__image05__text {
+.isInViewed>.features__image05__text {
   height: 30.1rem;
 }
 
@@ -996,22 +1124,22 @@ button:hover {
   overflow: hidden;
 }
 
-.js-slideIn_l-r > * ,
-.js-slideIn_r-l > * {
+.js-slideIn_l-r>*,
+.js-slideIn_r-l>* {
   transition-delay: 0.3s;
   transition: 0.7s;
 }
 
-.js-slideIn_l-r > * {
+.js-slideIn_l-r>* {
   transform: translateX(-100%);
 }
 
-.js-slideIn_r-l > * {
+.js-slideIn_r-l>* {
   transform: translateX(100%);
 }
 
-.isInViewed.js-slideIn_l-r > * ,
-.isInViewed.js-slideIn_r-l > *  {
+.isInViewed.js-slideIn_l-r>*,
+.isInViewed.js-slideIn_r-l>* {
   transform: translateX(0%);
 }
 
@@ -1088,8 +1216,8 @@ button:hover {
 
 
 .product-image01 {
-  margin: 0 0 -0.9rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
 .product-image01__item01 {
@@ -1099,7 +1227,7 @@ button:hover {
   width: 54.8rem;
 }
 
-.product-image01__item01 > * {
+.product-image01__item01>* {
   width: 0%;
   object-fit: cover;
   object-position: left;
@@ -1108,7 +1236,7 @@ button:hover {
   height: 21rem;
 }
 
-.isInViewed.product-image01__item01 > * {
+.isInViewed.product-image01__item01>* {
   width: 100%;
 }
 
@@ -1119,7 +1247,7 @@ button:hover {
   width: 8.7rem;
 }
 
-.product-image01__item02 > * {
+.product-image01__item02>* {
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -1128,7 +1256,7 @@ button:hover {
   height: 0rem;
 }
 
-.isInViewed.product-image01__item02 > * {
+.isInViewed.product-image01__item02>* {
   height: 60.1rem;
 }
 
@@ -1402,10 +1530,7 @@ button:hover {
 }
 
 
-
-.benefit {
-  margin: 0 0 23rem;
-}
+/* benefit */
 
 .benefit__header {
   margin: auto;
@@ -1543,9 +1668,9 @@ button:hover {
   background: #fff;
 }
 
-.floatBanner{
+.floatBanner {
   animation: btnFloatBanner 2s infinite;
-  bottom:2rem;
+  bottom: 2rem;
   position: fixed;
   right: 3rem;
   transform-origin: center;
@@ -1554,7 +1679,7 @@ button:hover {
 }
 
 @media screen and (max-width:750px) {
-  .floatBanner{
+  .floatBanner {
     left: 7.25rem;
     width: 62rem;
   }
@@ -1564,9 +1689,11 @@ button:hover {
   0% {
     transform: scale(1, 1)
   }
+
   50% {
     transform: scale(1.1, 1.1)
   }
+
   100% {
     transform: scale(1, 1)
   }
