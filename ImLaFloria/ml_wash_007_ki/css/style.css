@@ -71,6 +71,10 @@ button:hover {
     background-color: #fff;
 }
 
+.fv__header {
+    margin-bottom: 2.5rem;
+}
+
 /*
 // content
 */
@@ -105,12 +109,29 @@ button:hover {
 .text--bold,
 .text--pink,
 .text--blue,
-.underline--yellow {
+.underline--yellow,
+.text--large {
     font-size: 3.8rem;
 }
 
 .text--marker {
     background: #fff0b5;
+}
+
+.text--large {
+    font-size: 1.25em;
+}
+
+.text--exlarge {
+    font-size: 1.8em;
+}
+
+.text--medium {
+    font-size: 3.2rem;
+}
+
+.text--small {
+    font-size: max(10px, 1.8rem);
 }
 
 .text--bold {
@@ -140,6 +161,7 @@ button:hover {
 .text--right {
     display: block;
     text-align: right;
+    padding-right: 2em;
 }
 
 .text--center {
@@ -164,6 +186,38 @@ button:hover {
     margin-bottom: 0;
 }
 
+.margin-bottom-2rem {
+    margin-bottom: 2rem;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-top-2rem {
+    margin-top: 2rem;
+}
+
+.margin-top-4rem {
+    margin-top: 4rem;
+}
+
+.display-block {
+    display: block;
+}
+
+.letter-space-0 {
+    letter-spacing: 0;
+}
+
+.fit-content {
+    width: fit-content;
+    margin: auto;
+}
+
+.line-height-1 {
+    line-height: 1.2;
+}
 
 /*
 // footer
