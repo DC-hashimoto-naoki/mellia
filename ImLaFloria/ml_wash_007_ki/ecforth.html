@@ -59,7 +59,7 @@
 
             <p class="content__text text--center">
                 私が出会ったのが<br>
-                <span class="text--large underline--yellow">この「アイム フロリア」</span>
+                <span class="text--large underline--yellow">この「アイム ラフロリア」</span>
             </p>
 
             <img class="content__image" src="{{ file_root_path }}/ml_wash_007_ki/images/04.gif" alt="">
@@ -79,8 +79,9 @@
             <p class="content__text margin-bottom-0 text--center text--pink">
                 ＼ SNSで話題 ／
             </p>
-            <img class="content__image margin-bottom-0" src="{{ file_root_path }}/ml_wash_007_ki/images/_isntagram.jpg"
-                alt="">
+            <!-- <img class="content__image margin-bottom-0" src="{{ file_root_path }}/ml_wash_007_ki/images/_isntagram.jpg" alt=""> -->
+            <div id="letro-marker" style=" margin: 0 !important; padding: 0 !important; position: static !important;"></div>
+
             <p class="content__text margin-bottom-0 margin-top-2rem text--center text--pink">
                 ↓ 有名雑誌にも掲載 ↓
             </p>
@@ -208,8 +209,7 @@
                 なんと
             </p>
             <div class="fit-content">
-                <img class="content__image margin-bottom-0" src="{{ file_root_path }}/ml_wash_007_ki/images/12_2.gif"
-                    alt="">
+                <img class="content__image margin-bottom-0" src="{{ file_root_path }}/ml_wash_007_ki/images/12_2.gif" alt="">
                 <p class="text--right text--small">※自社調べ</p>
             </div>
 
@@ -366,6 +366,20 @@
             if (!results[2]) return '';
             return decodeURIComponent(results[2].replace(/\+/g, ""));
         }
+    </script>
+
+    <!-- script for letro -->
+    <script>
+        // letro用スクリプト 20220706
+        window.__letroUgcGadget = window.__letroUgcGadget || {};
+        __letroUgcGadget.advertiser_id = 955;
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://letro.jp/tags/js/letro.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'letro-jssdk'));
     </script>
 </body>
 

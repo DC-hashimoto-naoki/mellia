@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10万本売れてる　秘密の悩みを"泡"で解消　肌ケアまで叶うってホント？</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,7 +15,8 @@
 
         <section class="fv">
             <img class="fv__header" src="./images/_header.jpg" alt="">
-            <video class="fv__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/_FV.mp4" autoplay loop muted playsinline></video>
+            <video class="fv__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/_FV.mp4" autoplay loop
+                muted playsinline></video>
             <p class="content__text text--center">
                 <span class="text--pink underline">雑誌やInstagramでも話題の<br>
                     デリケートゾーンケアを</span><br>
@@ -58,7 +59,7 @@
 
             <p class="content__text text--center">
                 私が出会ったのが<br>
-                <span class="text--large underline--yellow">この「アイム フロリア」</span>
+                <span class="text--large underline--yellow">この「アイム ラフロリア」</span>
             </p>
 
             <img class="content__image" src="./images/04.gif" alt="">
@@ -78,7 +79,10 @@
             <p class="content__text margin-bottom-0 text--center text--pink">
                 ＼ SNSで話題 ／
             </p>
-            <img class="content__image margin-bottom-0" src="./images/_isntagram.jpg" alt="">
+            <!-- <img class="content__image margin-bottom-0" src="./images/_isntagram.jpg" alt=""> -->
+            <div id="letro-marker" style=" margin: 0 !important; padding: 0 !important; position: static !important;">
+            </div>
+
             <p class="content__text margin-bottom-0 margin-top-2rem text--center text--pink">
                 ↓ 有名雑誌にも掲載 ↓
             </p>
@@ -132,7 +136,8 @@
                 <span class="underline--yellow">とろっとしたテクスチャー</span>…！
             </p>
 
-            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_1.mp4" autoplay loop muted playsinline></video>
+            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_1.mp4" autoplay
+                loop muted playsinline></video>
 
             <p class="content__text">
                 クシュクシュすれば<span class="text--pink">ふわふわの泡</span><br>
@@ -140,7 +145,8 @@
                 <span class="text--pink">しっとり優しく洗えている実感が！</span>
             </p>
 
-            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_2.mp4" autoplay loop muted playsinline></video>
+            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_2.mp4" autoplay
+                loop muted playsinline></video>
 
             <p class="content__text">
                 香りも強すぎず<br>
@@ -151,7 +157,8 @@
                 使ってみると‥
             </p>
 
-            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_4_keiryou.mp4" autoplay loop muted playsinline></video>
+            <video class="content__image" src="https://discovery-inc.com/testup/mellia/ml_wash_007_ki/09_4_keiryou.mp4"
+                autoplay loop muted playsinline></video>
 
             <p class="content__text">
                 しっとりうるおうだけでなく<br>
@@ -323,35 +330,35 @@
 
     <script>
         //パラメーター出し分けスクリプト for rohto.co.jp article-lp only 20210114
-          var lpURL = getParam('lp');
-          var enqURL = getParam('enq');
-          
-          if(enqURL !== null){
+        var lpURL = getParam('lp');
+        var enqURL = getParam('enq');
+
+        if (enqURL !== null) {
             var parameter = enqURL + '?lp=' + lpURL;
-          } else {
+        } else {
             var parameter = lpURL;
-          }
-        
-          window.onload = function onLoad() {
-            if(lpURL !== null){
-             getQueryString();
+        }
+
+        window.onload = function onLoad() {
+            if (lpURL !== null) {
+                getQueryString();
             }
-          }
-          
-          function getQueryString() {
+        }
+
+        function getQueryString() {
             var targets = document.querySelectorAll('a.js-cta');
-            if(targets.length){
-              for (var i = 0; i < targets.length; i++) {
-                var target = targets[i];
-                var protocol = location.protocol;
-                var host = location.hostname;
-                var ctaUrl = protocol + '//' + host + '/' + parameter;
-                target.href = ctaUrl;
-              }
+            if (targets.length) {
+                for (var i = 0; i < targets.length; i++) {
+                    var target = targets[i];
+                    var protocol = location.protocol;
+                    var host = location.hostname;
+                    var ctaUrl = protocol + '//' + host + '/' + parameter;
+                    target.href = ctaUrl;
+                }
             }
-          }
-        
-          function getParam(name, url) {
+        }
+
+        function getParam(name, url) {
             if (!url) url = window.location.href;
             name = name.replace(/[\[\]]/g, "\\$&");
             var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -359,8 +366,21 @@
             if (!results) return null;
             if (!results[2]) return '';
             return decodeURIComponent(results[2].replace(/\+/g, ""));
-          }
-        </script>
+        }
+    </script>
+
+    <!-- script for letro -->
+    <script>
+        window.__letroUgcGadget = window.__letroUgcGadget || {};
+        __letroUgcGadget.advertiser_id = 955;
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://letro.jp/tags/js/letro.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'letro-jssdk'));
+    </script>
 </body>
 
 </html>
