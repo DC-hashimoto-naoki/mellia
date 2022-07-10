@@ -49,6 +49,10 @@ a:hover {
   margin-right: auto;
 }
 
+.position-relative {
+  position: relative;
+}
+
 /* cta */
 .cta {
   position: relative;
@@ -198,11 +202,11 @@ a:hover {
   margin-bottom: 7.5rem;
 }
 
-.no1_list_item:nth-child(1){
+.no1_list_item:nth-child(1) {
   padding-left: 7rem;
 }
 
-.no1_list_item:nth-child(3){
+.no1_list_item:nth-child(3) {
   padding-right: 7rem;
 }
 
@@ -239,10 +243,12 @@ a:hover {
   top: 5.5rem;
   left: 0rem;
 }
+
 .illust02 {
   top: 0;
   right: 0;
 }
+
 .illust03 {
   bottom: 0;
   right: 0;
@@ -273,6 +279,8 @@ a:hover {
 .arrow {
   position: relative;
   left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .step_image {
@@ -359,6 +367,87 @@ a:hover {
   transform: translateX(-50%);
 }
 
+/* nayami */
+
+.causing__image01--wrapper {
+  height: 100rem;
+}
+
+.causing__image--wrapper {
+  margin-top: -12rem;
+  margin-bottom: -7rem;
+}
+
+.nayami_illust {
+  position: relative;
+  height: 40rem;
+}
+
+.illust_image {
+  position: absolute;
+}
+
+.illust_girl {
+  left: 6rem;
+}
+
+.illust_text01 {
+  top: 2rem;
+  left: 35rem;
+}
+
+.illust_text02 {
+  top: 11rem;
+  right: 5rem;
+}
+
+.illust_text03 {
+  bottom: 8rem;
+  right: 9rem;
+}
+
+.important__wrapper {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.apostrophe {
+  position: absolute;
+}
+
+.apostrophe_top {
+  top: -1.5rem;
+  right: 27rem;
+}
+
+.apostrophe_bottom {
+  bottom: -2.5rem;
+  left: 27rem;
+}
+
+.care__wrapper {
+  height: 40.8rem;
+}
+
+.care_item {
+  position: absolute;
+}
+
+.care_left {
+  left: 0;
+}
+
+.care_right {
+  right: 0;
+}
+
+.care_icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* animation */
 @keyframes expansion {
   0% {
     transform: scale(1, 1)
