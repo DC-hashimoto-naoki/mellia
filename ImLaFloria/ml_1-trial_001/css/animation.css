@@ -1,0 +1,44 @@
+/* animation */
+.arrow,
+.arrow_top,
+.voice_arrow {
+    animation: arrow-move 1s ease-in-out infinite;
+}
+
+@keyframes arrow-move {
+    0%{ transform: translateY(0rem);}
+    50%{ transform: translateY(1rem);}
+    100%{ transform: translateY(0rem);}
+}
+
+.cta_btn {
+    animation: expansion 2s infinite;
+}
+
+@keyframes expansion {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1.08, 1.08)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+.apostrophe {
+    animation: apostrophe-move 1s ease-in-out infinite;
+}
+
+@keyframes apostrophe-move {
+    0%{ opacity: 1;}
+    50%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+.perfect {
+    clip-path: inset(0 0% 0 0);
+}

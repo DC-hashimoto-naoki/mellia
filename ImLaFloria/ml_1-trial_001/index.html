@@ -13,6 +13,7 @@
     <script src="./js/old/common.js"></script>
     <!-- END old -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <script src="./js/main.js"></script>
     <script src="./js/getImageSize.js"></script>
 </head>
@@ -22,13 +23,82 @@
         <section class="fv">
             <img class="target" src="./images/testup/fv.png" alt="">
         </section>
-        <section class="cta">
-            <img loading="lazy" class="arrow" src="./images/testup/arrow.png" alt="">
-            <img loading="lazy" src="./images/testup/offer.png" alt="">
-            <div class="cta_wrapper"><a href="#formArea"><img loading="lazy" class="cta_btn exceptionImage"
-                        src="./images/testup/cta_btn_01.png" alt=""></a></div>
+        <section class="cta cta_top">
+            <img class="arrow_top" src="./images/arrow.png" alt="">
+            <div class="bg_beige bg_beige--01">
+                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <div class="cta_content">
+                    <div class="price_off">
+                        <img class="cta_number" src="./images/cta/35.png" alt="">
+                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                    </div>
+                    <img src="./images/cta/picture.png" alt="">
+                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                </div>
+                <div class="list__wrapper">
+                    <img class="list" src="./images/cta/list.png" alt="">
+                    <img class="omake" src="./images/cta/omake.png" alt="">
+                </div>
+            </div>
+            <div class="teiki__wrapper">
+                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <div class="price__wrapper">
+                    <img class="cta_price" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg_beige bg_beige--02">
+                <a href="">
+                    <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
+                </a>
+                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
+                <img src="./images/cta/footer.png" alt="">
+            </div>
+        </section>
+
+        <section class="award">
+            <img class="award_title" src="./images/award/award_title.png" alt="">
+            <img class="margin-x-auto award_text" src="./images/award/award_text.png" alt="">
+            <div class="media-sns__media__wrapper">
+                <ul class="media-sns__items js-inview">
+                    <li class="media-sns__item"><img src="./images/old/parts/magazine01.png" alt="VOGUE"></li>
+                    <li class="media-sns__item"><img src="./images/old/parts/magazine03.png" alt="anan"></li>
+                    <li class="media-sns__item"><img src="./images/old/parts/magazine02.png" alt="25"></li>
+                </ul>
+            </div>
+            <img class="margin-x-auto award_logo" src="./images/award/award_logo.png" alt="">
+            <img class="margin-x-auto" src="./images/award/event_title.png" alt="">
+            <img class="margin-x-auto event_text" src="./images/award/event_text.png" alt="">
+            <div class="event__wapper">
+                <img class="event_item event_picture01" src="./images/award/event_picture01.png" alt="">
+                <img class="event_item event_picture02" src="./images/award/event_picture02.png" alt="">
+                <img class="event_item parco" src="./images/award/parco.png" alt="">
+                <img class="event_item isetan" src="./images/award/isetan.png" alt="">
+                <img class="event_item event_bottom_text" src="./images/award/event_bottom_text.png" alt="">
+            </div>
         </section>
         <br>
+        <section class="voice">
+            <img src="./images/voice/voice_title.png" alt="">
+            <img class="margin-x-auto voice_text_top" src="./images/voice/voice_text_top.png" alt="">
+            <div class="voice_content">
+                <video class="voice_item voice_movie" autoplay loop muted playsinline
+                    src="https://discovery-inc.com/testup/mellia/ml_1-trial_001/imagemovie.mp4"></video>
+                <img class="voice_item circle01" src="./images/voice/circle01.png" alt="">
+                <img class="voice_item circle02" src="./images/voice/circle02.png" alt="">
+                <img class="voice_item circle03" src="./images/voice/circle03.png" alt="">
+                <img class="voice_item voice_text01" src="./images/voice/voice_text01.png" alt="">
+                <img class="voice_item voice_text02" src="./images/voice/voice_text02.png" alt="">
+                <img class="voice_item voice_text03" src="./images/voice/voice_text03.png" alt="">
+            </div>
+            <div class="voice_text__wrapper">
+                <img class="voice_box" src="./images/voice/voice_box.png" alt="">
+                <img class="voice_arrow" src="./images/voice/voice_arrow.png" alt="">
+            </div>
+            <img class="margin-x-auto" src="./images/voice/voice_picture.png" alt="">
+            <img class="margin-x-auto voice_text_bottom" src="./images/voice/voice_text_bottom.png" alt="">
+        </section>
         <section class="cta">
             <div class="bg_beige bg_beige--01">
                 <img class="cta_top" src="./images/cta/cta_top.png" alt="">
@@ -55,39 +125,31 @@
 
             <div class="bg_beige bg_beige--02">
                 <a href="">
-                    <img src="./images/cta/cta_btn.png" alt="">
+                    <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
                 <img class="footer_top" src="./images/cta/footer_top.png" alt="">
                 <img src="./images/cta/footer.png" alt="">
             </div>
         </section>
 
-        <section class="award">
-            <img src="./images/testup/award.png" alt="">
-            <!-- letro-marker -->
-            <div id="letro-marker" style=" margin: 0 !important; padding: 0 !important; position: static !important;">
-            </div>
-
-            <img src="./images/testup/pop_up.png" alt="">
-            <div class="voice__wrapper">
-                <img src="./images/testup/voice.png" alt="">
-                <video class="voice_movie" src="https://discovery-inc.com/testup/mellia/ml_1-trial_001/imagemovie.mp4"
-                    autoplay loop muted playsinline></video>
-            </div>
-        </section>
-        <section class="cta">
-            <img loading="lazy" src="./images/testup/offer.png" alt="">
-            <div class="cta_wrapper"><a href="#formArea"><img loading="lazy" class="cta_btn"
-                        src="./images/testup/cta_btn_02.png" alt=""></a></div>
-        </section>
-        <section class="nayami_old">
-            <img loading="lazy" src="./images/testup/nayami.png" alt="">
-        </section>
-        <br>new!
         <section class="nayami">
-            <img src="./images/nayami/nayami_top_title.png" alt="">
+            <div class="nayami_top_title__wrapper">
+                <img class="nayami_top_title margin-x-auto" src="./images/nayami/nayami_top_title.png" alt="">
+            </div>
             <div class="nayami_list__wrapper">
                 <img class="margin-x-auto" src="./images/nayami/nayami_list.png" alt="">
+                <div class="nayami_check-box check-box_01">
+                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                    <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
+                </div>
+                <div class="nayami_check-box check-box_02">
+                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                    <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
+                </div>
+                <div class="nayami_check-box check-box_03">
+                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                    <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
+                </div>
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
             <img class="margin-x-auto" src="./images/nayami/nayami_text01.png" alt="">
@@ -141,49 +203,62 @@
                 <img class="apostrophe apostrophe_bottom" src="./images/nayami/apostrophe_bottom.png" alt="">
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
-            
+
             <div class="care">
-                <img class="margin-x-auto" src="./images/nayami/care_top.png" alt="">
+                <img class="margin-x-auto care_top" src="./images/nayami/care_top.png" alt="">
                 <div class="care__wrapper position-relative">
                     <img class="care_item care_left" src="./images/nayami/care_left.png" alt="">
                     <img class="care_item care_right" src="./images/nayami/care_right.png" alt="">
                     <img class="care_item care_icon" src="./images/nayami/care.png" alt="">
                 </div>
-                <img class="margin-x-auto" src="./images/nayami/care_bottom.png" alt="">
+                <img class="margin-x-auto care_bottom" src="./images/nayami/care_bottom.png" alt="">
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
             <img src="./images/nayami/bottom_picture.png" alt="">
+            <img class="margin-x-auto nayami_bottom_box" src="./images/nayami/nayami_bottom_box.png" alt="">
+            <div class="nayami_bottom_icons">
+                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon01.png" alt="">
+                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon02.png" alt="">
+                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon03.png" alt="">
+            </div>
+            <img class="nayami_bottom_notion" src="./images/nayami/nayami_bottom_notion.png" alt="">
         </section>
 
         <section class="cta">
-            <img loading="lazy" src="./images/testup/offer.png" alt="">
-            <div class="cta_wrapper"><a href="#formArea"><img loading="lazy" class="cta_btn"
-                        src="./images/testup/cta_btn_02.png" alt=""></a></div>
-        </section>
-        <section class="step">
-            <img src="./images/testup/step__top.png" alt="">
-            <div class="step_title__wrapper">
-                <img class="step_title" src="./images/testup/step_01.png" alt="">
-                <img class="how_to_use__btn" src="./images/testup/how_to_use__btn.png" alt="">
+            <div class="bg_beige bg_beige--01">
+                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <div class="cta_content">
+                    <div class="price_off">
+                        <img class="cta_number" src="./images/cta/35.png" alt="">
+                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                    </div>
+                    <img src="./images/cta/picture.png" alt="">
+                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                </div>
+                <div class="list__wrapper">
+                    <img class="list" src="./images/cta/list.png" alt="">
+                    <img class="omake" src="./images/cta/omake.png" alt="">
+                </div>
             </div>
-            <img class="step_answer" src="./images/testup/step_01_a.png" alt="">
-            <div class="step_title__wrapper">
-                <img class="step_title" src="./images/testup/step_02.png" alt="">
-                <img class="how_to_use__btn" src="./images/testup/how_to_use__btn.png" alt="">
+            <div class="teiki__wrapper">
+                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <div class="price__wrapper">
+                    <img class="cta_price" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                </div>
+            </div>
 
+            <div class="bg_beige bg_beige--02">
+                <a href="">
+                    <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
+                </a>
+                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
+                <img src="./images/cta/footer.png" alt="">
             </div>
-            <img class="step_answer" src="./images/testup/step_02_a.png" alt="">
-            <div class="step_title__wrapper">
-                <img class="step_title" src="./images/testup/step_03.png" alt="">
-                <img class="how_to_use__btn" src="./images/testup/how_to_use__btn.png" alt="">
-
-            </div>
-            <img class="step_answer" src="./images/testup/step_03_a.png" alt="">
         </section>
-        <br>
+
         <section class="step">
-            <img src="./images/testup/step__top.png" alt="">
-            <img class="margin-x-auto" src="./images/step/step_title.png" alt="">
+            <img class="margin-x-auto step_title" src="./images/step/step_title.png" alt="">
             <div class="step_image">
                 <img src="./images/step/step_top_image.png" alt="">
                 <img class="step_number step1" src="./images/step/step1.png" alt="">
@@ -193,48 +268,82 @@
 
             <img class="step_icon margin-x-auto" src="./images/step/step1_icon.png" alt="">
             <img src="./images/step/step1_image.png" alt="">
-            <img class="margin-x-auto" src="./images/step/step1_text.png" alt="">
+            <img class="margin-x-auto step1_text" src="./images/step/step1_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
 
             <div class="step_answer">
-                <img src="./images/step/step1_answer.png" alt="">
-                <img src="./images/step/step1_answer_text.png" alt="">
-                <img src="./images/step/step1_answer01.png" alt="">
-                <img src="./images/step/step1_answer02.png" alt="">
-                <img src="./images/step/step1_answer03.png" alt="">
-                <img src="./images/step/step1_answer_arrow01.png" alt="">
-                <img src="./images/step/step1_answer_arrow02.png" alt="">
+                <img class="margin-x-auto" src="./images/step/step1_answer.png" alt="">
+                <img class="margin-x-auto step1_answer_text" src="./images/step/step1_answer_text.png" alt="">
+                <div class="step_answer_01">
+                    <img class="step1_answer_item step1_answer01" src="./images/step/step1_answer01.png" alt="">
+                    <img class="step1_answer_item step1_answer02" src="./images/step/step1_answer02.png" alt="">
+                    <img class="step1_answer_item step1_answer03" src="./images/step/step1_answer03.png" alt="">
+                    <img class="step1_answer_item step1_answer_arrow01" src="./images/step/step1_answer_arrow01.png"
+                        alt="">
+                    <img class="step1_answer_item step1_answer_arrow02" src="./images/step/step1_answer_arrow02.png"
+                        alt="">
+                </div>
             </div>
 
             <img class="step_icon margin-x-auto" src="./images/step/step2_icon.png" alt="">
             <img class="step2_image" src="./images/step/step2_image.png" alt="">
-            <img class="margin-x-auto" src="./images/step/step2_text.png" alt="">
+            <img class="margin-x-auto step2_text" src="./images/step/step2_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
 
             <div class="step_answer">
                 <img src="./images/step/step2_answer.png" alt="">
-                <img src="./images/step/step2_answer_text.png" alt="">
+                <img class="margin-x-auto step2_answer_text" src="./images/step/step2_answer_text.png" alt="">
             </div>
 
             <img class="step_icon margin-x-auto" src="./images/step/step3_icon.png" alt="">
             <img class="step3_image" src="./images/step/step3_image.png" alt="">
-            <img class="margin-x-auto" src="./images/step/step3_text.png" alt="">
+            <img class="margin-x-auto step3_text" src="./images/step/step3_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
 
             <div class="step_answer">
                 <img src="./images/step/step3_answer.png" alt="">
-                <img src="./images/step/step3_answer_text.png" alt="">
+                <img class="margin-x-auto step3_answer_text" src="./images/step/step3_answer_text.png" alt="">
             </div>
 
-            <img src="./images/step/perfect.png" alt="">
+            <div class="perfect__wrapper">
+                <img class="margin-x-auto perfect" src="./images/step/perfect.png" alt="">
+            </div>
         </section>
+
         <section class="cta">
-            <img loading="lazy" src="./images/testup/offer.png" alt="">
-            <div class="cta_wrapper"><a href="#formArea"><img loading="lazy" class="cta_btn"
-                        src="./images/testup/cta_btn_02.png" alt=""></a></div>
+            <div class="bg_beige bg_beige--01">
+                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <div class="cta_content">
+                    <div class="price_off">
+                        <img class="cta_number" src="./images/cta/35.png" alt="">
+                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                    </div>
+                    <img src="./images/cta/picture.png" alt="">
+                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                </div>
+                <div class="list__wrapper">
+                    <img class="list" src="./images/cta/list.png" alt="">
+                    <img class="omake" src="./images/cta/omake.png" alt="">
+                </div>
+            </div>
+            <div class="teiki__wrapper">
+                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <div class="price__wrapper">
+                    <img class="cta_price" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg_beige bg_beige--02">
+                <a href="">
+                    <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
+                </a>
+                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
+                <img src="./images/cta/footer.png" alt="">
+            </div>
         </section>
 
         <section class="features">
@@ -369,11 +478,40 @@
 
 
         <section class="cta">
-            <img loading="lazy" src="./images/testup/offer.png" alt="">
-            <div class="cta_wrapper"><a href="#formArea"><img loading="lazy" class="cta_btn"
-                        src="./images/testup/cta_btn_02.png" alt=""></a></div>
+            <div class="bg_beige bg_beige--01">
+                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <div class="cta_content">
+                    <div class="price_off">
+                        <img class="cta_number" src="./images/cta/35.png" alt="">
+                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                    </div>
+                    <img src="./images/cta/picture.png" alt="">
+                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                </div>
+                <div class="list__wrapper">
+                    <img class="list" src="./images/cta/list.png" alt="">
+                    <img class="omake" src="./images/cta/omake.png" alt="">
+                </div>
+            </div>
+            <div class="teiki__wrapper">
+                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <div class="price__wrapper">
+                    <img class="cta_price" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg_beige bg_beige--02">
+                <a href="">
+                    <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
+                </a>
+                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
+                <img src="./images/cta/footer.png" alt="">
+            </div>
         </section>
     </main>
+
+
     <script>
         window.__letroUgcGadget = window.__letroUgcGadget || {};
         __letroUgcGadget.advertiser_id = 955;
