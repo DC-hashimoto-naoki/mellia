@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const options01 = {
         root: null,
-        rootMargin: "-100px",
+        rootMargin: "-100px 0px",
         threshold: 0.5
     };
 
@@ -87,7 +87,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         let items = Array.prototype.slice.call(dom);
         items.forEach((item, index) => {
-            console.log(item);
             item.style.transitionDelay = delay_time * index + 's';
         })
     }
