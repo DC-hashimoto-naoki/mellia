@@ -1,5 +1,5 @@
 // FV
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     function showTarget(target) {
         target.classList.add('show');
     }
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const options01 = {
         root: null,
         rootMargin: "-100px 0px",
-        threshold: 0.5
+        threshold: [0.5]
     };
 
     const options02 = {

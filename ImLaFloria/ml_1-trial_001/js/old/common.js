@@ -9,6 +9,11 @@ const options = {
     rootMargin: "0px",
     threshold: [0.25]
 };
+const options02 = {
+    root: null,
+    rootMargin: "0px",
+    threshold: [0.1]
+};
 
 const targetElements = document.querySelectorAll(".js-inview");
 const callback = function(entries,observer) {
@@ -21,7 +26,12 @@ const callback = function(entries,observer) {
 }
 
 const io = new IntersectionObserver(callback, options);
+const io02 = new IntersectionObserver(callback, options02);
 targetElements.forEach(function (targetElements) {
+    if(targetElements.classList.contains('media-sns__items')){
+      io02.observe(targetElements);
+      return;
+    }
     io.observe(targetElements);
 });
 

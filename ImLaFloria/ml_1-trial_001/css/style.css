@@ -170,6 +170,11 @@ a:hover {
   margin: 3rem auto;
 }
 
+.emblem {
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+}
+
 .award_logo {
   margin: 3rem auto;
 }
@@ -219,6 +224,7 @@ a:hover {
 
 .media-sns__media__wrapper {
   padding: 0 4.5rem;
+  margin-bottom: 6.5rem;
 }
 
 /* voice */
@@ -672,11 +678,11 @@ a:hover {
 }
 
 .care_left {
-  left: 0;
+  left: 0.1rem;
 }
 
 .care_right {
-  right: 0;
+  right: 0.1rem;
 }
 
 .care_icon {
