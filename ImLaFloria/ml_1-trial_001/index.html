@@ -15,36 +15,40 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
     <script src="./js/main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
     <script src="./js/getImageSize.js"></script>
 </head>
 
 <body>
     <main class="main">
         <section class="fv">
-            <img class="target" src="./images/testup/fv.png" alt="">
+            <img class="fv_image" src="./images/fv/fv.png" alt="">
+            <img class="fv_text margin-x-auto target fade-up" src="./images/fv/fv_text.png" alt="">
         </section>
         <section class="cta cta_top">
-            <img class="arrow_top" src="./images/arrow.png" alt="">
+            <img class="arrow_top target fade-in" src="./images/arrow.png" alt="">
             <div class="bg_beige bg_beige--01">
-                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <img class="cta_top target fade-up" src="./images/cta/cta_top.png" alt="">
                 <div class="cta_content">
                     <div class="price_off">
-                        <img class="cta_number" src="./images/cta/35.png" alt="">
-                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                        <img class="cta_number target02 zoom-in delay03s" src="./images/cta/35.png" alt="">
+                        <img class="cta_off target02 fade-in delay03s" src="./images/cta/off.png" alt="">
                     </div>
-                    <img src="./images/cta/picture.png" alt="">
-                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                    <img class="target fade-up cta_picture" src="./images/cta/picture.png" alt="">
+                    <img class="traial_set target02 clip-left_to_right" src="./images/cta/traial_set.png" alt="">
                 </div>
                 <div class="list__wrapper">
-                    <img class="list" src="./images/cta/list.png" alt="">
-                    <img class="omake" src="./images/cta/omake.png" alt="">
+                    <img class="list target fade-up" src="./images/cta/list.png" alt="">
+                    <img class="omake target zoom-in delay03s" src="./images/cta/omake.png" alt="">
                 </div>
             </div>
             <div class="teiki__wrapper">
-                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <img class="cta_teiki target02 fade-in" src="./images/cta/teiki.png" alt="">
                 <div class="price__wrapper">
-                    <img class="cta_price" src="./images/cta/price.png" alt="">
-                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                    <img class="cta_price target02 fade-in" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980 target02 zoom-in" src="./images/cta/1980.png" alt="">
                 </div>
             </div>
 
@@ -52,8 +56,8 @@
                 <a href="">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
-                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
-                <img src="./images/cta/footer.png" alt="">
+                <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
+                <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
 
@@ -67,15 +71,15 @@
                     <li class="media-sns__item"><img src="./images/old/parts/magazine02.png" alt="25"></li>
                 </ul>
             </div>
-            <img class="margin-x-auto award_logo" src="./images/award/award_logo.png" alt="">
+            <img class="margin-x-auto award_logo target fade-up" src="./images/award/award_logo.png" alt="">
             <img class="margin-x-auto" src="./images/award/event_title.png" alt="">
             <img class="margin-x-auto event_text" src="./images/award/event_text.png" alt="">
-            <div class="event__wapper">
-                <img class="event_item event_picture01" src="./images/award/event_picture01.png" alt="">
-                <img class="event_item event_picture02" src="./images/award/event_picture02.png" alt="">
-                <img class="event_item parco" src="./images/award/parco.png" alt="">
-                <img class="event_item isetan" src="./images/award/isetan.png" alt="">
-                <img class="event_item event_bottom_text" src="./images/award/event_bottom_text.png" alt="">
+            <div class="event__wapper target target_group">
+                <img class="event_item event_picture01 target slide-in-left_to_right" src="./images/award/event_picture01.png" alt="">
+                <img class="event_item event_picture02 target slide-in-right_to_left" src="./images/award/event_picture02.png" alt="">
+                <img class="event_item parco target clip-right_to_left" src="./images/award/parco.png" alt="">
+                <img class="event_item isetan target clip-left_to_right" src="./images/award/isetan.png" alt="">
+                <img class="event_item event_bottom_text target clip-left_to_right" src="./images/award/event_bottom_text.png" alt="">
             </div>
         </section>
         <br>
@@ -85,41 +89,44 @@
             <div class="voice_content">
                 <video class="voice_item voice_movie" autoplay loop muted playsinline
                     src="https://discovery-inc.com/testup/mellia/ml_1-trial_001/imagemovie.mp4"></video>
-                <img class="voice_item circle01" src="./images/voice/circle01.png" alt="">
-                <img class="voice_item circle02" src="./images/voice/circle02.png" alt="">
-                <img class="voice_item circle03" src="./images/voice/circle03.png" alt="">
-                <img class="voice_item voice_text01" src="./images/voice/voice_text01.png" alt="">
-                <img class="voice_item voice_text02" src="./images/voice/voice_text02.png" alt="">
-                <img class="voice_item voice_text03" src="./images/voice/voice_text03.png" alt="">
+                <img class="voice_item circle01 target fade-in" src="./images/voice/circle01.png" alt="">
+                <img class="voice_item circle02 target fade-in" src="./images/voice/circle02.png" alt="">
+                <img class="voice_item circle03 target fade-in" src="./images/voice/circle03.png" alt="">
+                <div class="target target_group">
+                    <img class="voice_item voice_text01 target02 clip-top_to_bottom" src="./images/voice/voice_text01.png" alt="">
+                    <img class="voice_item voice_text03 target02 clip-top_to_bottom" src="./images/voice/voice_text03.png" alt="">
+                    <img class="voice_item voice_text02 target02 clip-top_to_bottom" src="./images/voice/voice_text02.png" alt="">
+                </div>
             </div>
             <div class="voice_text__wrapper">
-                <img class="voice_box" src="./images/voice/voice_box.png" alt="">
+                <img class="voice_box target fade-in" src="./images/voice/voice_box.png" alt="">
                 <img class="voice_arrow" src="./images/voice/voice_arrow.png" alt="">
             </div>
-            <img class="margin-x-auto" src="./images/voice/voice_picture.png" alt="">
+            <img class="margin-x-auto target fade-up" src="./images/voice/voice_picture.png" alt="">
             <img class="margin-x-auto voice_text_bottom" src="./images/voice/voice_text_bottom.png" alt="">
         </section>
+
         <section class="cta">
             <div class="bg_beige bg_beige--01">
-                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <img class="cta_top target fade-up" src="./images/cta/cta_top.png" alt="">
                 <div class="cta_content">
                     <div class="price_off">
-                        <img class="cta_number" src="./images/cta/35.png" alt="">
-                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                        <img class="cta_number target02 zoom-in delay03s" src="./images/cta/35.png" alt="">
+                        <img class="cta_off target02 fade-in delay03s" src="./images/cta/off.png" alt="">
                     </div>
-                    <img src="./images/cta/picture.png" alt="">
-                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                    <img class="target fade-up cta_picture" src="./images/cta/picture.png" alt="">
+                    <img class="traial_set target02 clip-left_to_right" src="./images/cta/traial_set.png" alt="">
                 </div>
                 <div class="list__wrapper">
-                    <img class="list" src="./images/cta/list.png" alt="">
-                    <img class="omake" src="./images/cta/omake.png" alt="">
+                    <img class="list target fade-up" src="./images/cta/list.png" alt="">
+                    <img class="omake target zoom-in delay03s" src="./images/cta/omake.png" alt="">
                 </div>
             </div>
             <div class="teiki__wrapper">
-                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <img class="cta_teiki target02 fade-in" src="./images/cta/teiki.png" alt="">
                 <div class="price__wrapper">
-                    <img class="cta_price" src="./images/cta/price.png" alt="">
-                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                    <img class="cta_price target02 fade-in" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980 target02 zoom-in" src="./images/cta/1980.png" alt="">
                 </div>
             </div>
 
@@ -127,37 +134,37 @@
                 <a href="">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
-                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
-                <img src="./images/cta/footer.png" alt="">
+                <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
+                <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
 
         <section class="nayami">
             <div class="nayami_top_title__wrapper">
-                <img class="nayami_top_title margin-x-auto" src="./images/nayami/nayami_top_title.png" alt="">
+                <img class="nayami_top_title margin-x-auto target02 clip-left_to_right" src="./images/nayami/nayami_top_title.png" alt="">
             </div>
             <div class="nayami_list__wrapper">
                 <img class="margin-x-auto" src="./images/nayami/nayami_list.png" alt="">
-                <div class="nayami_check-box check-box_01">
-                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                <div class="nayami_check-box check-box_01 target target_group">
+                    <img class="icon_check target clip-left_to_right delay03s" src="./images/nayami/icon_check.png" alt="">
                     <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
                 </div>
-                <div class="nayami_check-box check-box_02">
-                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                <div class="nayami_check-box check-box_02 target target_group">
+                    <img class="icon_check target clip-left_to_right delay03s" src="./images/nayami/icon_check.png" alt="">
                     <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
                 </div>
-                <div class="nayami_check-box check-box_03">
-                    <img class="icon_check" src="./images/nayami/icon_check.png" alt="">
+                <div class="nayami_check-box check-box_03 target target_group">
+                    <img class="icon_check target clip-left_to_right delay03s" src="./images/nayami/icon_check.png" alt="">
                     <img class="icon_box" src="./images/nayami/icon_box.png" alt="">
                 </div>
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
             <img class="margin-x-auto" src="./images/nayami/nayami_text01.png" alt="">
-            <div class="nayami_illust">
+            <div class="nayami_illust target target_group">
                 <img class="illust_image illust_girl" src="./images/nayami/illust_girl.png" alt="">
-                <img class="illust_image illust_text01" src="./images/nayami/illust_text01.png" alt="">
-                <img class="illust_image illust_text02" src="./images/nayami/illust_text02.png" alt="">
-                <img class="illust_image illust_text03" src="./images/nayami/illust_text03.png" alt="">
+                <img class="illust_image illust_text01 target clip-left_to_right transition07s" src="./images/nayami/illust_text01.png" alt="">
+                <img class="illust_image illust_text02 target clip-left_to_right transition07s" src="./images/nayami/illust_text02.png" alt="">
+                <img class="illust_image illust_text03 target clip-left_to_right transition07s" src="./images/nayami/illust_text03.png" alt="">
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
             <img class="margin-x-auto" src="./images/nayami/title02.png" alt="">
@@ -198,53 +205,53 @@
             </div>
             <img class="margin-x-auto" src="./images/nayami/causing__image02.png" alt="">
             <div class="position-relative important__wrapper">
-                <img class="margin-x-auto" src="./images/nayami/important.png" alt="">
+                <img class="margin-x-auto target fade-in" src="./images/nayami/important.png" alt="">
                 <img class="apostrophe apostrophe_top" src="./images/nayami/apostrophe_top.png" alt="">
                 <img class="apostrophe apostrophe_bottom" src="./images/nayami/apostrophe_bottom.png" alt="">
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
 
             <div class="care">
-                <img class="margin-x-auto care_top" src="./images/nayami/care_top.png" alt="">
+                <img class="margin-x-auto care_top target fade-in" src="./images/nayami/care_top.png" alt="">
                 <div class="care__wrapper position-relative">
-                    <img class="care_item care_left" src="./images/nayami/care_left.png" alt="">
-                    <img class="care_item care_right" src="./images/nayami/care_right.png" alt="">
-                    <img class="care_item care_icon" src="./images/nayami/care.png" alt="">
+                    <img class="care_item care_left target fade-down" src="./images/nayami/care_left.png" alt="">
+                    <img class="care_item care_right target fade-up" src="./images/nayami/care_right.png" alt="">
+                    <img class="care_item care_icon target fade-in" src="./images/nayami/care.png" alt="">
                 </div>
-                <img class="margin-x-auto care_bottom" src="./images/nayami/care_bottom.png" alt="">
+                <img class="margin-x-auto care_bottom target fade-in" src="./images/nayami/care_bottom.png" alt="">
             </div>
             <img class="arrow margin-x-auto" src="./images/arrow.png" alt="">
-            <img src="./images/nayami/bottom_picture.png" alt="">
-            <img class="margin-x-auto nayami_bottom_box" src="./images/nayami/nayami_bottom_box.png" alt="">
+            <img class="target fade-up" src="./images/nayami/bottom_picture.png" alt="">
+            <img class="margin-x-auto nayami_bottom_box target fade-up" src="./images/nayami/nayami_bottom_box.png" alt="">
             <div class="nayami_bottom_icons">
-                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon01.png" alt="">
-                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon02.png" alt="">
-                <img class="nayami_bottom_icon" src="./images/nayami/nayami_bottom_icon03.png" alt="">
+                <img class="nayami_bottom_icon target fade-in" src="./images/nayami/nayami_bottom_icon01.png" alt="">
+                <img class="nayami_bottom_icon target fade-in delay03s" src="./images/nayami/nayami_bottom_icon02.png" alt="">
+                <img class="nayami_bottom_icon target fade-in delay06s" src="./images/nayami/nayami_bottom_icon03.png" alt="">
             </div>
-            <img class="nayami_bottom_notion" src="./images/nayami/nayami_bottom_notion.png" alt="">
+            <img class="nayami_bottom_notion target fade-in" src="./images/nayami/nayami_bottom_notion.png" alt="">
         </section>
 
         <section class="cta">
             <div class="bg_beige bg_beige--01">
-                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <img class="cta_top target fade-up" src="./images/cta/cta_top.png" alt="">
                 <div class="cta_content">
                     <div class="price_off">
-                        <img class="cta_number" src="./images/cta/35.png" alt="">
-                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                        <img class="cta_number target02 zoom-in delay03s" src="./images/cta/35.png" alt="">
+                        <img class="cta_off target02 fade-in delay03s" src="./images/cta/off.png" alt="">
                     </div>
-                    <img src="./images/cta/picture.png" alt="">
-                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                    <img class="target fade-up cta_picture" src="./images/cta/picture.png" alt="">
+                    <img class="traial_set target02 clip-left_to_right" src="./images/cta/traial_set.png" alt="">
                 </div>
                 <div class="list__wrapper">
-                    <img class="list" src="./images/cta/list.png" alt="">
-                    <img class="omake" src="./images/cta/omake.png" alt="">
+                    <img class="list target fade-up" src="./images/cta/list.png" alt="">
+                    <img class="omake target zoom-in delay03s" src="./images/cta/omake.png" alt="">
                 </div>
             </div>
             <div class="teiki__wrapper">
-                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <img class="cta_teiki target02 fade-in" src="./images/cta/teiki.png" alt="">
                 <div class="price__wrapper">
-                    <img class="cta_price" src="./images/cta/price.png" alt="">
-                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                    <img class="cta_price target02 fade-in" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980 target02 zoom-in" src="./images/cta/1980.png" alt="">
                 </div>
             </div>
 
@@ -252,43 +259,43 @@
                 <a href="">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
-                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
-                <img src="./images/cta/footer.png" alt="">
+                <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
+                <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
 
         <section class="step">
-            <img class="margin-x-auto step_title" src="./images/step/step_title.png" alt="">
-            <div class="step_image">
+            <img class="margin-x-auto step_title target fade-up" src="./images/step/step_title.png" alt="">
+            <div class="step_image target target_group">
                 <img src="./images/step/step_top_image.png" alt="">
-                <img class="step_number step1" src="./images/step/step1.png" alt="">
-                <img class="step_number step2" src="./images/step/step2.png" alt="">
-                <img class="step_number step3" src="./images/step/step3.png" alt="">
+                <img class="step_number step1 target clip-bottom_to_top transition07s" src="./images/step/step1.png" alt="">
+                <img class="step_number step2 target clip-bottom_to_top transition07s" src="./images/step/step2.png" alt="">
+                <img class="step_number step3 target clip-left_to_right transition07s" src="./images/step/step3.png" alt="">
             </div>
 
-            <img class="step_icon margin-x-auto" src="./images/step/step1_icon.png" alt="">
-            <img src="./images/step/step1_image.png" alt="">
-            <img class="margin-x-auto step1_text" src="./images/step/step1_text.png" alt="">
+            <img class="step_icon margin-x-auto target fade-in" src="./images/step/step1_icon.png" alt="">
+            <img class="target slide-in-left_to_right" src="./images/step/step1_image.png" alt="">
+            <img class="margin-x-auto step1_text target fade-up" src="./images/step/step1_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
 
             <div class="step_answer">
                 <img class="margin-x-auto" src="./images/step/step1_answer.png" alt="">
-                <img class="margin-x-auto step1_answer_text" src="./images/step/step1_answer_text.png" alt="">
-                <div class="step_answer_01">
-                    <img class="step1_answer_item step1_answer01" src="./images/step/step1_answer01.png" alt="">
-                    <img class="step1_answer_item step1_answer02" src="./images/step/step1_answer02.png" alt="">
-                    <img class="step1_answer_item step1_answer03" src="./images/step/step1_answer03.png" alt="">
-                    <img class="step1_answer_item step1_answer_arrow01" src="./images/step/step1_answer_arrow01.png"
+                <img class="margin-x-auto step1_answer_text target fade-up" src="./images/step/step1_answer_text.png" alt="">
+                <div class="step_answer_01 target target_group">
+                    <img class="step1_answer_item step1_answer01 target fade-in" src="./images/step/step1_answer01.png" alt="">
+                    <img class="step1_answer_item step1_answer02 target fade-in" src="./images/step/step1_answer02.png" alt="">
+                    <img class="step1_answer_item step1_answer03 target fade-in" src="./images/step/step1_answer03.png" alt="">
+                    <img class="step1_answer_item step1_answer_arrow01 target fade-in" src="./images/step/step1_answer_arrow01.png"
                         alt="">
-                    <img class="step1_answer_item step1_answer_arrow02" src="./images/step/step1_answer_arrow02.png"
+                    <img class="step1_answer_item step1_answer_arrow02 target fade-in" src="./images/step/step1_answer_arrow02.png"
                         alt="">
                 </div>
             </div>
 
-            <img class="step_icon margin-x-auto" src="./images/step/step2_icon.png" alt="">
-            <img class="step2_image" src="./images/step/step2_image.png" alt="">
-            <img class="margin-x-auto step2_text" src="./images/step/step2_text.png" alt="">
+            <img class="step_icon margin-x-auto target fade-in" src="./images/step/step2_icon.png" alt="">
+            <img class="step2_image target slide-in-right_to_left" src="./images/step/step2_image.png" alt="">
+            <img class="margin-x-auto step2_text target fade-up" src="./images/step/step2_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
 
@@ -297,8 +304,8 @@
                 <img class="margin-x-auto step2_answer_text" src="./images/step/step2_answer_text.png" alt="">
             </div>
 
-            <img class="step_icon margin-x-auto" src="./images/step/step3_icon.png" alt="">
-            <img class="step3_image" src="./images/step/step3_image.png" alt="">
+            <img class="step_icon margin-x-auto target fade-in" src="./images/step/step3_icon.png" alt="">
+            <img class="step3_image target slide-in-left_to_right" src="./images/step/step3_image.png" alt="">
             <img class="margin-x-auto step3_text" src="./images/step/step3_text.png" alt="">
             <img class="how_to_use margin-x-auto" src="./images/step/how_to_use.png" alt="">
             <img class="arrow margin-x-auto" src="./images/step/arrow.png" alt="">
@@ -309,31 +316,31 @@
             </div>
 
             <div class="perfect__wrapper">
-                <img class="margin-x-auto perfect" src="./images/step/perfect.png" alt="">
+                <img class="margin-x-auto perfect target clip-left_to_right" src="./images/step/perfect.png" alt="">
             </div>
         </section>
 
         <section class="cta">
             <div class="bg_beige bg_beige--01">
-                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <img class="cta_top target fade-up" src="./images/cta/cta_top.png" alt="">
                 <div class="cta_content">
                     <div class="price_off">
-                        <img class="cta_number" src="./images/cta/35.png" alt="">
-                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                        <img class="cta_number target02 zoom-in delay03s" src="./images/cta/35.png" alt="">
+                        <img class="cta_off target02 fade-in delay03s" src="./images/cta/off.png" alt="">
                     </div>
-                    <img src="./images/cta/picture.png" alt="">
-                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                    <img class="target fade-up cta_picture" src="./images/cta/picture.png" alt="">
+                    <img class="traial_set target02 clip-left_to_right" src="./images/cta/traial_set.png" alt="">
                 </div>
                 <div class="list__wrapper">
-                    <img class="list" src="./images/cta/list.png" alt="">
-                    <img class="omake" src="./images/cta/omake.png" alt="">
+                    <img class="list target fade-up" src="./images/cta/list.png" alt="">
+                    <img class="omake target zoom-in delay03s" src="./images/cta/omake.png" alt="">
                 </div>
             </div>
             <div class="teiki__wrapper">
-                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <img class="cta_teiki target02 fade-in" src="./images/cta/teiki.png" alt="">
                 <div class="price__wrapper">
-                    <img class="cta_price" src="./images/cta/price.png" alt="">
-                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                    <img class="cta_price target02 fade-in" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980 target02 zoom-in" src="./images/cta/1980.png" alt="">
                 </div>
             </div>
 
@@ -341,46 +348,46 @@
                 <a href="">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
-                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
-                <img src="./images/cta/footer.png" alt="">
+                <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
+                <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
 
         <section class="features">
             <img class="edge top_left" src="./images/features/top_left.png" alt="">
             <img class="edge bottom_right" src="./images/features/bottom_right.png" alt="">
-            <img class="margin-x-auto" src="./images/features/sarani.png" alt="">
+            <img class="margin-x-auto target fade-in" src="./images/features/sarani.png" alt="">
             <img class="features_arrow_down margin-x-auto" src="./images/features/arrow_down.png" alt="">
-            <img class="features_title_top margin-x-auto" src="./images/features/title_top.png" alt="">
+            <img class="features_title_top margin-x-auto target fade-up" src="./images/features/title_top.png" alt="">
             <img class="features_three margin-x-auto" src="./images/features/three.png" alt="">
-            <img class="margin-x-auto" src="./images/features/no1.png" alt="">
-            <img class="no1_title margin-x-auto" src="./images/features/no1_title.png" alt="">
-            <img src="./images/features/no1_image.png" alt="">
-            <img class="no1_text" src="./images/features/no1_text.png" alt="">
-            <ul class="no1_list">
-                <li class="no1_list_item"><img src="./images/features/icon01.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon02.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon03.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon04.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon05.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon06.png" alt=""></li>
-                <li class="no1_list_item"><img src="./images/features/icon07.png" alt=""></li>
+            <img class="margin-x-auto target fade-in" src="./images/features/no1.png" alt="">
+            <img class="no1_title margin-x-auto target fade-up" src="./images/features/no1_title.png" alt="">
+            <img class="target fade-in" src="./images/features/no1_image.png" alt="">
+            <img class="no1_text target fade-up" src="./images/features/no1_text.png" alt="">
+            <ul class="no1_list target target_group">
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon01.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon02.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon03.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon04.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon05.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon06.png" alt=""></li>
+                <li class="no1_list_item target fade-in"><img src="./images/features/icon07.png" alt=""></li>
             </ul>
-            <img class="margin-x-auto" src="./images/features/no2.png" alt="">
-            <img class="no2_title margin-x-auto" src="./images/features/no2_title.png" alt="">
-            <img src="./images/features/no2_image.png" alt="">
+            <img class="margin-x-auto target fade-in" src="./images/features/no2.png" alt="">
+            <img class="no2_title margin-x-auto target fade-up" src="./images/features/no2_title.png" alt="">
+            <img class="target fade-in" src="./images/features/no2_image.png" alt="">
             <img class="no2_text" src="./images/features/no2_text.png" alt="">
-            <div class="features_illust">
-                <img class="illust illust01" src="./images/features/illust01.png" alt="">
-                <img class="illust illust02" src="./images/features/illust02.png" alt="">
-                <img class="illust illust03" src="./images/features/illust03.png" alt="">
+            <div class="features_illust target target_group">
+                <img class="illust illust01 target fade-in" src="./images/features/illust01.png" alt="">
+                <img class="illust illust02 target fade-in" src="./images/features/illust02.png" alt="">
+                <img class="illust illust03 target fade-in" src="./images/features/illust03.png" alt="">
             </div>
-            <img class="no2_footer" src="./images/features/no2_footer.png" alt="">
-            <img class="margin-x-auto" src="./images/features/no3.png" alt="">
-            <img class="no3_title margin-x-auto" src="./images/features/no3_title.png" alt="">
+            <img class="no2_footer target fade-up" src="./images/features/no2_footer.png" alt="">
+            <img class="margin-x-auto target fade-in" src="./images/features/no3.png" alt="">
+            <img class="no3_title margin-x-auto target fade-up" src="./images/features/no3_title.png" alt="">
             <div class="no3_image__wrapper">
-                <img src="./images/features/no3_image.png" alt="">
-                <img class="stamp" src="./images/features/stamp.png" alt="">
+                <img class="target fade-in" src="./images/features/no3_image.png" alt="">
+                <img class="stamp target02 zoom-in delay03s" src="./images/features/stamp.png" alt="">
             </div>
         </section>
         <section class="uservoice">
@@ -479,25 +486,25 @@
 
         <section class="cta">
             <div class="bg_beige bg_beige--01">
-                <img class="cta_top" src="./images/cta/cta_top.png" alt="">
+                <img class="cta_top target fade-up" src="./images/cta/cta_top.png" alt="">
                 <div class="cta_content">
                     <div class="price_off">
-                        <img class="cta_number" src="./images/cta/35.png" alt="">
-                        <img class="cta_off" src="./images/cta/off.png" alt="">
+                        <img class="cta_number target02 zoom-in delay03s" src="./images/cta/35.png" alt="">
+                        <img class="cta_off target02 fade-in delay03s" src="./images/cta/off.png" alt="">
                     </div>
-                    <img src="./images/cta/picture.png" alt="">
-                    <img class="traial_set" src="./images/cta/traial_set.png" alt="">
+                    <img class="target fade-up cta_picture" src="./images/cta/picture.png" alt="">
+                    <img class="traial_set target02 clip-left_to_right" src="./images/cta/traial_set.png" alt="">
                 </div>
                 <div class="list__wrapper">
-                    <img class="list" src="./images/cta/list.png" alt="">
-                    <img class="omake" src="./images/cta/omake.png" alt="">
+                    <img class="list target fade-up" src="./images/cta/list.png" alt="">
+                    <img class="omake target zoom-in delay03s" src="./images/cta/omake.png" alt="">
                 </div>
             </div>
             <div class="teiki__wrapper">
-                <img class="cta_teiki" src="./images/cta/teiki.png" alt="">
+                <img class="cta_teiki target02 fade-in" src="./images/cta/teiki.png" alt="">
                 <div class="price__wrapper">
-                    <img class="cta_price" src="./images/cta/price.png" alt="">
-                    <img class="cta_1980" src="./images/cta/1980.png" alt="">
+                    <img class="cta_price target02 fade-in" src="./images/cta/price.png" alt="">
+                    <img class="cta_1980 target02 zoom-in" src="./images/cta/1980.png" alt="">
                 </div>
             </div>
 
@@ -505,12 +512,15 @@
                 <a href="">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
-                <img class="footer_top" src="./images/cta/footer_top.png" alt="">
-                <img src="./images/cta/footer.png" alt="">
+                <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
+                <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
+
+
     </main>
 
+    <br><br><br><br><br><br>
 
     <script>
         window.__letroUgcGadget = window.__letroUgcGadget || {};

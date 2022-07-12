@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function(){
+window.addEventListener('load', function(){
     let images = this.document.getElementsByTagName('img');
     let sources = this.document.getElementsByTagName('source');
     let exceptionImages = this.document.querySelectorAll('.exceptionImage')

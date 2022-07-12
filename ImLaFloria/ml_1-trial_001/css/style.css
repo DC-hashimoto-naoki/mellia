@@ -53,6 +53,19 @@ a:hover {
   position: relative;
 }
 
+.arrow {
+  position: relative;
+  left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* fv */
+.fv_text {
+  margin-top: 2.5rem;
+  margin-bottom: 9rem;
+}
+
 /* cta */
 .arrow_top {
   position: absolute;
@@ -72,7 +85,7 @@ a:hover {
   transform: translateX(-50%);
 }
 
-
+.cta_picture {}
 
 .bg_beige {
   background-color: #efede8;
@@ -99,6 +112,7 @@ a:hover {
   top: -10.5rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 .cta_off {
@@ -144,6 +158,10 @@ a:hover {
 
 /* award */
 
+.award {
+  margin-top: -10rem;
+}
+
 .award_title {
   margin-top: 3.5rem;
 }
@@ -164,6 +182,9 @@ a:hover {
   position: relative;
   height: 56.5rem;
   margin-bottom: 6rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
+  overflow: hidden;
 }
 
 .event_item {
@@ -172,27 +193,27 @@ a:hover {
 
 .event_picture01 {
   top: 0;
-  left: 5rem;
+  left: 0rem;
 }
 
 .event_picture02 {
   bottom: 0rem;
-  right: 5rem;
+  right: 1rem;
 }
 
 .parco {
   top: 9rem;
-  right: 10rem;
+  right: 6rem;
   clip-path: inset(0 0 0 3.8%);
 }
 
 .isetan {
-  left: 5rem;
+  left: 0rem;
   bottom: 14rem;
 }
 
 .event_bottom_text {
-  right: 4.5rem;
+  right: 0.5rem;
   bottom: 0;
 }
 
@@ -209,7 +230,7 @@ a:hover {
 .voice_content {
   position: relative;
   height: 120rem;
-  overflow-x: hidden;
+  overflow: hidden;
   margin-bottom: 3rem;
 }
 
@@ -283,27 +304,6 @@ a:hover {
 .voice_text_bottom {
   margin-top: 3rem;
   margin-bottom: 5rem;
-}
-
-/* target */
-
-.arrow_old {
-  position: absolute;
-  top: -7rem;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 10.7rem;
-}
-
-.target {
-  opacity: 0;
-  transform: translateY(5rem);
-  transition: 0.7s;
-}
-
-.target.show {
-  opacity: 1;
-  transform: translateY(0rem);
 }
 
 /* features */
@@ -423,11 +423,8 @@ a:hover {
 
 /* step */
 
-.arrow {
-  position: relative;
-  left: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.step {
+  overflow-x: hidden;
 }
 
 .step_image {
@@ -536,14 +533,6 @@ a:hover {
   margin: 3.5rem auto;
 }
 
-.step_answer.show {
-  display: block;
-}
-
-.step_answer.fade-in {
-  opacity: 1;
-}
-
 .step_title__wrapper {
   position: relative;
 }
@@ -601,9 +590,11 @@ a:hover {
 .check-box_01 {
   top: 6rem;
 }
+
 .check-box_02 {
   top: 17.5rem;
 }
+
 .check-box_03 {
   top: 29rem;
 }
