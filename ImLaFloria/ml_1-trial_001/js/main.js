@@ -1,11 +1,10 @@
 // FV
 window.addEventListener('DOMContentLoaded', () => {
-    function showTarget(target) {
-        target.classList.add('show');
-    }
-
     const fv_image = document.querySelector('.fv_image')
-    setTimeout(showTarget(fv_image), 300);
+
+    setTimeout(()=>{
+        fv_image.classList.add('show');
+    }, 300)
 });
 
 // 3 step section how to use button
