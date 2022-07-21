@@ -705,3 +705,35 @@ a:hover {
 .nayami_bottom_notion {
   margin: 3rem 5rem 4rem auto;
 }
+
+/* float banner */
+.floatBanner {
+  animation: btnFloatBanner 2s infinite;
+  bottom: 2rem;
+  position: fixed;
+  right: 3rem;
+  transform-origin: center;
+  width: 42rem;
+  z-index: 10;
+}
+
+@media screen and (max-width:750px) {
+  .floatBanner {
+    left: 7.25rem;
+    width: 62rem;
+  }
+}
+
+@keyframes btnFloatBanner {
+  0% {
+    transform: scale(1, 1)
+  }
+
+  50% {
+    transform: scale(1.1, 1.1)
+  }
+
+  100% {
+    transform: scale(1, 1)
+  }
+}

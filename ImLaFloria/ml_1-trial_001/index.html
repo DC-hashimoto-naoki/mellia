@@ -18,8 +18,14 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/scroll.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/getImageSize.js"></script>
+
+    <!-- HEADタグ内への設置を推奨 -->
+    <script
+        src="https://cdn.smart-dialog.jp/profiles/2d06e015-b13b-45b6-9b01-91d6134d5ee1/current/bootstrap.js"></script>
+    <!-- 複数プロファイルを設置する場合、メインとなるプロファイルのもの1つのみを記述してください -->
+
 </head>
 
 <body>
@@ -54,7 +60,8 @@
             </div>
 
             <div class="bg_beige bg_beige--02">
-                <a href="#formArea">
+                <a href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
                     <img class="cta_btn" src="./images/cta/cta_btn_top.png" alt="">
                 </a>
                 <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
@@ -73,9 +80,10 @@
                     <li class="media-sns__item"><img src="./images/ml_7-wash/parts/magazine02.png" alt="25"></li>
                 </ul>
             </div>
-            
+
             <!-- letro-marker -->
-            <div id="letro-marker" style=" margin: 0 !important; padding: 0 !important; position: static !important;"></div>
+            <div id="letro-marker" style=" margin: 0 !important; padding: 0 !important; position: static !important;">
+            </div>
 
             <img class="margin-x-auto" src="./images/award/event_title.png" alt="">
             <img class="margin-x-auto event_text" src="./images/award/event_text.png" alt="">
@@ -142,7 +150,8 @@
             </div>
 
             <div class="bg_beige bg_beige--02">
-                <a href="#formArea">
+                <a href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
                 <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
@@ -217,7 +226,8 @@
                     <picture class="causing__image01-5 js-inview js-fadeIn js-fadeInDelay" data-delay-time="0.7s">
                         <source class="fade_and_rotate" srcset="images/ml_7-wash/webp/causing__image01-5.webp"
                             type="image/webp">
-                        <img class="fade_and_rotate" src="images/ml_7-wash/causing__image01-5.png" alt="まぶたよりも皮膚が薄いデリケートゾーン。">
+                        <img class="fade_and_rotate" src="images/ml_7-wash/causing__image01-5.png"
+                            alt="まぶたよりも皮膚が薄いデリケートゾーン。">
                     </picture>
                 </div>
             </div>
@@ -277,7 +287,8 @@
             </div>
 
             <div class="bg_beige bg_beige--02">
-                <a href="#formArea">
+                <a href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
                 <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
@@ -373,7 +384,8 @@
             </div>
 
             <div class="bg_beige bg_beige--02">
-                <a href="#formArea">
+                <a href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
                 <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
@@ -431,7 +443,8 @@
                     </picture>
                     <button class="js-accordion uservoice__list__continued-btn"></button>
                     <picture class="uservoice__list__continued-part">
-                        <source srcset="./images/ml_7-wash/webp/uservoice__list--02_continued-part.webp" type="image/webp">
+                        <source srcset="./images/ml_7-wash/webp/uservoice__list--02_continued-part.webp"
+                            type="image/webp">
                         <img src="./images/ml_7-wash/uservoice__list--02_continued-part.png" alt="">
                     </picture>
                 </li>
@@ -442,7 +455,8 @@
                     </picture>
                     <button class="js-accordion uservoice__list__continued-btn"></button>
                     <picture class="uservoice__list__continued-part">
-                        <source srcset="./images/ml_7-wash/webp/uservoice__list--03_continued-part.webp" type="image/webp">
+                        <source srcset="./images/ml_7-wash/webp/uservoice__list--03_continued-part.webp"
+                            type="image/webp">
                         <img src="./images/ml_7-wash/uservoice__list--03_continued-part.png" alt="">
                     </picture>
                 </li>
@@ -537,21 +551,26 @@
             </div>
 
             <div class="bg_beige bg_beige--02">
-                <a href="#formArea">
+                <a href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
                     <img class="cta_btn" src="./images/cta/cta_btn.png" alt="">
                 </a>
                 <img class="footer_top target fade-up" src="./images/cta/footer_top.png" alt="">
                 <img class="target fade-up" src="./images/cta/footer.png" alt="">
             </div>
         </section>
-
-
     </main>
 
+    <a class="floatBanner" href="#chatform" data-chat_profile_uuid="2d06e015-b13b-45b6-9b01-91d6134d5ee1"
+        data-jump-variant-id="121">
+        <img src="./images/floatBanner_B.png" alt="初回送料無料 いつでも解約OK 35%OFFでお得に申し込む">
+    </a>
     <div id="formArea"></div>
     __PAYMENT_FORM__
 
-    <br><br><br><br><br><br>
+    <footer class="footer">
+        <small class="footer__copyright">Copyright 2021 Mellia Inc. All rights reserved.</small>
+    </footer>
 
     <script>
         window.__letroUgcGadget = window.__letroUgcGadget || {};
@@ -564,6 +583,12 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'letro-jssdk'));
     </script>
+
+    <style>
+        #smart-dialog img {
+            display: inline;
+        }
+    </style>
 </body>
 
 </html>
