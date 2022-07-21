@@ -1,6 +1,5 @@
 $(function () {
     let target02 = $('.target02')
-    console.log(target02.offset().top);
 
     $(window).scroll(function () {
         $('.target02').each(function () {
